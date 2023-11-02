@@ -20,3 +20,11 @@
   --bg-opacity: 1;
   background-color: var(--pittgold);
 }
+
+a {
+    @apply text-blue-500
+}
+
+a:hover {
+    @apply text-blue-800
+}
