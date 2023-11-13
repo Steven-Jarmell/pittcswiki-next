@@ -12,7 +12,11 @@ const Footer = (): JSX.Element => {
     <footer className="md:flex mt-auto text-center p-8 bg-gray-100">
       <div className="m-auto text-gray-600">
         © {new Date().getFullYear()}, Built with ❤️ by{" "}
-        <Link className="text-gray-800 font-bold" href="https://pittcsc.org" target="_blank">
+        <Link
+          className="text-gray-800 font-bold"
+          href="https://pittcsc.org"
+          target="_blank"
+        >
           PittCSC
         </Link>
         .{` `}
@@ -29,7 +33,9 @@ const Footer = (): JSX.Element => {
           <Link href="/feedback/" className="mr-2">
             Feedback
           </Link>
-          <Link href="https://github.com/PittCSWiki/pittcswiki" target="_blank">GitHub</Link>
+          <Link href="https://github.com/PittCSWiki/pittcswiki" target="_blank">
+            GitHub
+          </Link>
         </p>
       </div>
     </footer>

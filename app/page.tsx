@@ -1,10 +1,54 @@
-import Header from "@/components/Header"
 import Image from "next/image"
+import CampusBackground from "@/images/pittcampus.jpg"
+import Logo from "@/images/logo.svg"
+import Link from "next/link"
+import { RightArrowSvg } from "@/svgs/RightArrowSvg"
+import LinkPanel from "@/components/LinkPanel"
 
 export default function Home() {
   return (
     <main className="">
-        Main Page
+      <div className="landing-image">
+        <Image alt="" src={CampusBackground} className="w-auto md:w-full" />
+      </div>
+      <div className="max-w-4xl mx-auto">
+        <div className="md:mt-24 flex">
+          <div className="hidden md:block self-end h-64 bg-white p-6 shadow-2xl w-1/2 border">
+            <h1>The Pitt CS Wiki</h1>
+            <p>
+              A collection of course testimonials, guides, career prep
+              resources, and much more!
+            </p>
+            <Link
+              href="/guides/"
+              className="btn inline-flex bg-pittgold items-center"
+            >
+              Get Started {RightArrowSvg}
+            </Link>
+          </div>
+          <div className="w-1/2">
+            <Image
+              src={Logo}
+              className="ml-auto max-w-sm -mb-12"
+              alt="Pitt CS Wiki Logo"
+            />
+          </div>
+        </div>
+        <div className="md:hidden mt-12">
+          <h1>The Pitt CS Wiki</h1>
+          <p>
+            A collection of course testimonials, guides, career prep resources,
+            and much more!
+          </p>
+          <Link
+            href="/guides/"
+            className="btn inline-flex bg-pittgold items-center"
+          >
+            Get Started {RightArrowSvg}
+          </Link>
+        </div>
+        <LinkPanel />
+      </div>
     </main>
   )
 }
