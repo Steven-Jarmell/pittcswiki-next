@@ -13,6 +13,7 @@ const LinkPanel = () => {
     <div className="my-12 flex flex-col items-center flex-wrap md:flex-row justify-center">
       {LinkPanelItemList.map((item) => (
         <LinkPanelItem
+          key={item.path}
           path={item.path}
           icon={item.icon}
           iconAlt={item.iconAlt}

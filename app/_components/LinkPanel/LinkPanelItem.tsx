@@ -27,7 +27,11 @@ const LinkPanelItem = ({
       role="button"
       tabIndex={0}
     >
-      <Image className="w-16 mx-auto m-[0_auto] h-16 ease-in-out duration-300" alt={iconAlt} src={icon} />
+      <Image
+        className="w-16 mx-auto m-[0_auto] h-16 ease-in-out duration-300"
+        alt={iconAlt}
+        src={icon}
+      />
       <h3 className="mb-1">{title}</h3>
       <p className="flex-[1_0_auto]">
         {description} <Link href={path}>Learn more.</Link>
