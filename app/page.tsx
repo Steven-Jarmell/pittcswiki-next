@@ -22,7 +22,7 @@ export default function Home() {
             </p>
             <Link
               href="/guides/"
-              className="btn inline-flex bg-pittgold items-center"
+              className="btn inline-flex bg-pittgold items-center font-semibold py-2 px-2 border rounded"
             >
               Get Started {RightArrowSvg}
             </Link>
