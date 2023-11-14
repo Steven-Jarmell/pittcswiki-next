@@ -8,7 +8,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import logo from "../images/pantherhandbook-mini.svg"
+import logo from "@/app/_images/pantherhandbook-mini.svg"
 
 const Header = (): JSX.Element => {
   return (

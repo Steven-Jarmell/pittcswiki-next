@@ -1,6 +1,8 @@
 $pittblue: #243e8b;
 $pittgold: #ffb81c;
 
+/* Everything below this will hopefully be replaced */
+
 .course-pill {
   @apply rounded-full border w-32 mr-4 py-2 px-4 my-1 cursor-pointer text-center;
 
@@ -240,40 +242,6 @@ header {
   top: 2px;
   height: 24rem;
   overflow: hidden;
-}
-
-#blurb-grid {
-  .quick-blurb {
-    display: flex;
-    flex: 1 1 30%;
-    color: black;
-    flex-direction: column;
-    @apply p-4 pt-6 m-3 max-w-xs text-center text-sm;
-
-    h3 {
-      margin-bottom: 4px;
-    }
-
-    p {
-      flex: 1 0 auto;
-    }
-
-    img {
-      margin: 0 auto;
-      height: 4rem;
-      width: 4rem;
-      transition: 0.3s;
-    }
-
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2);
-
-      img {
-        transform: scale(1.2);
-      }
-    }
-  }
 }
 
 button.bg-pittgold.border {

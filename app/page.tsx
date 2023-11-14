@@ -1,9 +1,10 @@
 import Image from "next/image"
-import CampusBackground from "@/images/pittcampus.jpg"
-import Logo from "@/images/logo.svg"
 import Link from "next/link"
-import { RightArrowSvg } from "@/svgs/RightArrowSvg"
-import LinkPanel from "@/components/LinkPanel"
+
+import CampusBackground from "@/app/_images/pittcampus.jpg"
+import Logo from "@/app/_images/logo.svg"
+import { RightArrowSvg } from "@/app/_svgs/RightArrowSvg"
+import LinkPanel from "./_components/LinkPanel/LinkPanel"
 
 export default function Home() {
   return (

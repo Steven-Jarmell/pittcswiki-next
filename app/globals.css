@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Cannot figure out a way to do this in tailwind, will have to stay for now*/
+.link-panel-item {
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+    }
+}
+
 :root {
   --pittblue: #243e8b;
   --pittgold: #ffb81c;
