@@ -47,6 +47,16 @@
   animation: stripes 1s linear 0s infinite normal none running;
 }
 
+.landing-image {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2px;
+  height: 24rem;
+  overflow: hidden;
+}
+
 .container {
   padding: 0 10px;
 }
