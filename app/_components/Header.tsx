@@ -9,6 +9,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import logo from "@/app/_images/pantherhandbook-mini.svg"
+import Search from "./Search/Search"
 
 const Header = (): JSX.Element => {
   return (
@@ -27,9 +28,9 @@ const Header = (): JSX.Element => {
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-1/3">
-        <div className="relative">
-          <input type="text" placeholder="Temporary Search Bar" />
+      <div className="w-full md:w-1/3 flex items-center">
+        <div className="relative w-full">
+          <Search />
         </div>
       </div>
     </header>
