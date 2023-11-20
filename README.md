@@ -6,6 +6,6 @@ I found that the old codebase is flaky and I believe that it would be more reada
 
 ## Contributing
 
-Check out the guide on contributing to the New Wiki [here](docs/setup-dev.md).
+Check out the guide on contributing to the New Wiki [here](docs/contributing.md).
 
 Reach out to [jarmellsteve@yahoo.com](mailto:jarmellsteve@yahoo.com) or make an Github issue with an idea of what you would like to add
