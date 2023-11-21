@@ -1,4 +1,4 @@
-import { getNumFromCourseId } from "./course-namer";
+import { getNumFromCourseId } from "./course-namer"
 import categoriesData from "@/app/_data/categories.json"
 
 // This buckets courses into different types as specified in the
@@ -21,7 +21,10 @@ const applyFilter = (courseMap: any, filter: any) => {
 
 let categorized: any = null
 
-export const courseCategorizer = (courseList: any, categories = categoriesData) => {
+export const courseCategorizer = (
+  courseList: any,
+  categories = categoriesData
+) => {
   if (categorized) return categorized
 
   const courseMap = courseList.reduce((prev: any, current: any) => {

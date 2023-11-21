@@ -1,8 +1,8 @@
-import { CoursesDataType } from "./CoursesDataType";
+import { CoursesDataType } from "./CoursesDataType"
 
 export type CourseInfoDataType = {
-    metadata: {
-        generated: string;
-    },
-    courses: CoursesDataType[]
+  metadata: {
+    generated: string
+  }
+  courses: CoursesDataType[]
 }

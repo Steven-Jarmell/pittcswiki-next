@@ -1,4 +1,4 @@
-import { CourseInfoDataType } from "../_types/CourseInfoDataType";
+import { CourseInfoDataType } from "../_types/CourseInfoDataType"
 
 export const CourseInfoData: CourseInfoDataType = {
   metadata: {

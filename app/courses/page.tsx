@@ -1,8 +1,8 @@
 import Link from "next/link"
 import CourseListing from "../_components/Courses/CourseListing"
 
-import {CourseInfoData} from "@/app/_data/CourseInfoData"
-import {courseCategorizer} from "@/app/_utils/course-categorizer"
+import { CourseInfoData } from "@/app/_data/CourseInfoData"
+import { courseCategorizer } from "@/app/_utils/course-categorizer"
 const categorizedCourses = courseCategorizer(CourseInfoData.courses)
 
 export default function CoursesPage() {
@@ -16,7 +16,10 @@ export default function CoursesPage() {
           <Link href="/academics/scheduling">scheduling guide</Link>!
         </span>
       </p>
-      <CourseListing courseList={CourseInfoData} courseCategories={categorizedCourses}/>
+      <CourseListing
+        courseList={CourseInfoData}
+        courseCategories={categorizedCourses}
+      />
     </div>
   )
 }

@@ -1,3 +1,3 @@
 export type CourseRequirementsType = {
-    name: string
+  name: string
 }
