@@ -4,7 +4,7 @@ export type CourseItemType = {
   onClick: any
   showTitle: any
   isSelected: any
-  customCss: any
+  customCss?: any
   isPrereqFilterModeOn: any
   colorLegend: any
 }

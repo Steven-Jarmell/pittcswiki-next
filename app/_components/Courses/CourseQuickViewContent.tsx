@@ -1,8 +1,17 @@
 import { cleanCourseId, cleanCourseTitle } from "@/app/_utils/course-namer"
 import RequirementsListing from "../Requirement/RequirementsListing"
-import COURSE_REQUIREMENTS from "@/app/_data/requirements.json"
 import TermPills from "./TermPill"
 import Link from "next/link"
+
+interface CourseRequirements {
+  [key: string]: {
+    requirementsString: string
+    prereq?: string[] | { or: string[] }
+    coreq?: string[]
+  }
+}
+
+const COURSE_REQUIREMENTS: CourseRequirements = require("@/app/_data/requirements.json")
 
 const CourseQuickViewContent = ({
   id,

@@ -4,7 +4,15 @@ import { CSLegendData } from "../Requirement/enum"
 import RequirementDots from "../Requirement/RequirementDots"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
-import COURSE_REQUIREMENTS from "@/app/_data/requirements.json"
+interface CourseRequirements {
+  [key: string]: {
+    requirementsString: string
+    prereq?: string[] | { or: string[] }
+    coreq?: string[]
+  }
+}
+
+const COURSE_REQUIREMENTS: CourseRequirements = require("@/app/_data/requirements.json")
 
 const Course = ({
   id,
