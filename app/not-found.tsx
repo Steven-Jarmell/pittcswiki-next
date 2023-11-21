@@ -11,6 +11,7 @@ export default function Custom404() {
         src={RocPic}
         alt="Picture of Roc <3"
         className="w-[80vw] sm:w-[70vw] lg:w-[40vw]"
+        priority
       />
     </div>
   )
