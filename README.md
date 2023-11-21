@@ -1,7 +1,7 @@
 # The Pitt Computer Science Wiki
 
-I am going to be rewriting the current pitt cs wiki which can be found [here](https://github.com/pittcsc/pittcswiki/tree/master) using Next.js, TypeScript, and Tailwindcss  
-  
+I am going to be rewriting the current pitt cs wiki which can be found [here](https://github.com/pittcsc/pittcswiki/tree/master) using Next.js, TypeScript, and Tailwindcss
+
 I found that the old codebase is flaky and I believe that it would be more readable, maintainable, and efficient for this website to be written in Next.js rather than Gatsby.
 
 ## My Plan
