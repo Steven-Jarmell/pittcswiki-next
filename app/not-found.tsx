@@ -4,7 +4,7 @@ import RocPic from "@/app/_images/roc.png"
 export default function Custom404() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-center">
+      <h1 className="text-center p-2">
         Much like our quarterback, this page does not exist
       </h1>
       <Image
