@@ -7,7 +7,7 @@ const categorizedCourses = courseCategorizer(CourseInfoData.courses)
 
 export default function CoursesPage() {
   return (
-    <div className="container px-2 mx-auto">
+    <div className="lg:w-[80vw] mx-auto">
       <h1>Courses</h1>
       <p>
         If you are new to the CS classes,{" "}

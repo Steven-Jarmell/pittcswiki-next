@@ -1,5 +1,5 @@
 const OrRequirementDots = ({ req }: any) => {
-  const list = req.map(({ color, i }: any) => (
+  const list = req.map((color, i) => (
     <span
       style={{ background: color }}
       className="course-req-dot"

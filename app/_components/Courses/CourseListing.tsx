@@ -47,6 +47,10 @@ const CourseListing = ({ courseList, courseCategories }: any) => {
         <div className="inline-block mb-3">
           <PrereqLegend legendData={CSLegendData} />
         </div>
+        <p className="mb-0">
+          For example, this course has the prerequisites of CS 441 and CS 447
+          based on its dot colors:
+        </p>
         <Course
           key={"CS1622"}
           showTitle={state.showTitles}
@@ -57,10 +61,6 @@ const CourseListing = ({ courseList, courseCategories }: any) => {
           isPrereqFilterModeOn={true}
           colorLegend={CSLegendData}
         />
-        <p className="mb-0">
-          For example, this course has the prerequisites of CS 441 and CS 447
-          based on its dot colors.
-        </p>
       </div>
       <div className="flex flex-col-reverse md:flex-row">
         <div className="md:w-2/3 md:pr-1">
