@@ -27,7 +27,7 @@ const CourseQuickViewContent = ({
       <div className="mt-4 mb-2">
         <RequirementsListing requirements={COURSE_REQUIREMENTS[id]} />
       </div>
-      <p className="text-xs">
+      <p className="text-xs overflow-auto">
         {description.length > 850
           ? description.substring(0, 800) + "…"
           : description}
