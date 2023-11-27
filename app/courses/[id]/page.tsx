@@ -47,7 +47,7 @@ export default function CoursePage({ params }: { params: { id: string } }) {
           </p>
         )}
         <a href={courseData.sci_href} target="_blank" rel="noopener noreferrer">
-          View this course on Pitt's Website
+          View this course on Pitt{"'"}s Website
         </a>
         <h2 className="mt-4">Testimonials</h2>
         <div className="mb-4">Testimonial List Placeholder</div>
