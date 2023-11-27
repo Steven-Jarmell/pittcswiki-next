@@ -24,6 +24,10 @@
   }
 }
 
+.label {
+    @apply font-bold mr-2;
+  }
+
 .course-controls {
   p {
     @apply mb-2;
