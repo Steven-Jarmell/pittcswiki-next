@@ -4,7 +4,7 @@ import GuidesListing from "../_components/GuidesListing"
 
 export default function GuidesPage() {
   return (
-    <div className="lg:w-[80vw] mx-auto">
+    <>
       <Breadcrumb slug="guides" />
       <h1>Guides</h1>
       <ul>
@@ -51,6 +51,6 @@ export default function GuidesPage() {
         Still curious about something but cannot find it? Please let us know and
         we can add it! <Link href="/feedback">Fill out this form.</Link>
       </p>
-    </div>
+    </>
   )
 }

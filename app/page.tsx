@@ -8,7 +8,7 @@ import LinkPanel from "./_components/LinkPanel/LinkPanel"
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <div className="landing-image">
         <Image
           alt="Picture of Pitt's Campus as a background image"

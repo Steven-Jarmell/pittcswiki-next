@@ -8,7 +8,7 @@ const categorizedCourses = courseCategorizer(CourseInfoData.courses)
 
 export default function CoursesPage() {
   return (
-    <div className="lg:w-[80vw] mx-auto">
+    <>
       <Breadcrumb slug="courses" />
       <h1>Courses</h1>
       <p>
@@ -22,6 +22,6 @@ export default function CoursesPage() {
         courseList={CourseInfoData}
         courseCategories={categorizedCourses}
       />
-    </div>
+    </>
   )
 }
