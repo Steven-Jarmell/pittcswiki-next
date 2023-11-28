@@ -112,9 +112,10 @@ computer systems, software engineering, algorithms) and a list research
 projects or areas that are specific to a professor.
 
 When applying to an REU, convince the decision-makers of the following:
+
 - You are interested in 1+ of the REU's research areas.
 - You are technically qualified to conduct research in 1+ of the
-        REU's research areas.
+  REU's research areas.
 
 Applications require up to 2 letters of recommendation from faculty members.
 If you already have research experience with a professor, then definitely ask
@@ -127,14 +128,16 @@ or their school might not conduct research in their area of interest).
 
 Various foreign universities host research internships that accept
 international applicants. Examples include:
+
 - [ETH Zürich's Summer Research Fellowship](https://inf.ethz.ch/studies/summer-research-fellowship.html)
 - [Summer@EPFL](https://summer.epfl.ch/).
 
 Some other programs:
+
 - [Broad Institute (biomedical research)](https://www.broadinstitute.org/bsrp/broad-summer-research-program-bsrp)
 - [Distributed REU](https://cra.org/cra-wp/dreu/)
 - Google previously listed a research internship position that welcomed
-      applications from undergraduates (in addition to PhDs).
+  applications from undergraduates (in addition to PhDs).
 - [Microsoft Research](https://www.microsoft.com/en-us/research/academic-program/undergraduate-research-internship-computing/)
 - [MIT Lincoln Lab](https://www.ll.mit.edu/careers/student-opportunities)
 - [NASA Jet Propulsion Laboratory](https://www.jpl.jobs/students-and-postdocs)
@@ -154,6 +157,7 @@ and mentors make research easier.
 
 In the course of your research, you may need to read research papers. Instead of
 giving advice myself, I invite you to read these articles:
+
 - P. W. L. Fong [Reading a computer science research paper](https://pages.cpsc.ucalgary.ca/~pwlfong/Pub/inroads2009.pdf)
 - W. G. Griswold. [How to read an engineering research paper](http://cseweb.ucsd.edu/~wgg/CSE210/howtoread.html).
 - S. Keshav. [How to read a paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf).
@@ -165,19 +169,19 @@ Do what works best for you.
 
 - Reasons for getting the word out.
 - Solicit opinions and advice.
-    Presenting your research to an audience is an opportunity to solicit advice
-    for improvements and future research directions.
+  Presenting your research to an audience is an opportunity to solicit advice
+  for improvements and future research directions.
 - Network with the research community.
-    The people you meet while presenting your research might become future
-    collaborators, research advisors, company references, et cetera. Some
-    research conferences have industry sessions where you get to network with
-    companies and get a foot in the door for a job or internship.
+  The people you meet while presenting your research might become future
+  collaborators, research advisors, company references, et cetera. Some
+  research conferences have industry sessions where you get to network with
+  companies and get a foot in the door for a job or internship.
 - Add to your resume.
-    Research presentations–whether in the form of a paper, poster, talk,
-    et cetera–serve as a evidence and recognition for your research, which
-    can augment your resume. If you're applying to research-oriented graduate
-    programs, then this evidence of research accomplishment further demonstrates
-    your ability to produce presentable research.
+  Research presentations–whether in the form of a paper, poster, talk,
+  et cetera–serve as a evidence and recognition for your research, which
+  can augment your resume. If you're applying to research-oriented graduate
+  programs, then this evidence of research accomplishment further demonstrates
+  your ability to produce presentable research.
 
 ### Pitt CSC talks.
 
@@ -201,7 +205,7 @@ primary venue). Conferences and journals employ peer review, where reviewers
 provide feedback and decide whether to accept a paper for publication.
 
 Terminology sidenote: in conferences, reviewers are members of a
-*program committee*.
+_program committee_.
 
 If a conference paper is accepted, one of the authors is expected to give an
 oral (PowerPoint) presentation and engage with the audience in a Q&A session.
@@ -245,14 +249,15 @@ top conferences.
 
 Some conferences host [student research competitions](https://src.acm.org/).
 Generally, the process is as follows:
+
 1. Submit an extended abstract or other short written deliverable.
 2. If the program committee accepts your abstract, then present a poster
-    at the conference. Judges will talk to you about your poster and ask
-    questions.
+   at the conference. Judges will talk to you about your poster and ask
+   questions.
 3. If judges like your poster, then give an oral presentation and have a
-    Q&A with judges.
+   Q&A with judges.
 4. If judges like your presentation, win glory, prizes, and $$$ in a big
-    awards ceremony!
+   awards ceremony!
 
 Undergraduate and graduate students compete separately, so don't worry about
 getting pwned by PhDs with 5 years of experience.

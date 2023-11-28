@@ -1,7 +1,16 @@
 ---
 title: "Minor in Applied Statistics"
 author: "Alex Zharichenko"
-search_tags: ["stats", "stats minor", "applied stats", "data science", "data", "statistics", "statistics minor"]
+search_tags:
+  [
+    "stats",
+    "stats minor",
+    "applied stats",
+    "data science",
+    "data",
+    "statistics",
+    "statistics minor",
+  ]
 ---
 
 ## Why a statistics minor?
@@ -13,12 +22,12 @@ There are many reasons for taking on the applied statistics minor! Interested in
 The requirements for the applied stats minor are fairly simple they consist of 2 required courses as follows...
 
 - STAT 1000 (Applied Statistical Methods) or acceptable substitutes
-    - This will be your introduction to statistics with topics including descriptive statistics, probability, random sampling. hypothesis testing, regression and analysis of variance.
-    - **This will complete your statistics/math portion of required gen eds for CS majors**
-    - Acceptable substitutes include STAT 1100 (Statistics and Probability for Business Management), ENGR 0020 (Probability and Statistics for Engineers 1), and STAT 0200 (Basic Applied Statistics). **But, I suggest you preferably take STAT 1000** as it is a preq. for most of the future courses and some of the content is missing in the substitutes.
+  - This will be your introduction to statistics with topics including descriptive statistics, probability, random sampling. hypothesis testing, regression and analysis of variance.
+  - **This will complete your statistics/math portion of required gen eds for CS majors**
+  - Acceptable substitutes include STAT 1100 (Statistics and Probability for Business Management), ENGR 0020 (Probability and Statistics for Engineers 1), and STAT 0200 (Basic Applied Statistics). **But, I suggest you preferably take STAT 1000** as it is a preq. for most of the future courses and some of the content is missing in the substitutes.
 - STAT 1221 (Applied Regression)
-    - This course will enter you into the world of modeling, starting with simple linear regressions into more complicated regression models.
-    - This course will give you a lot of fundamentals that apply quickly into data science, such as the basic ML model of linear regressions or using dummy coding to help make categorical predictors work in regression models.
+  - This course will enter you into the world of modeling, starting with simple linear regressions into more complicated regression models.
+  - This course will give you a lot of fundamentals that apply quickly into data science, such as the basic ML model of linear regressions or using dummy coding to help make categorical predictors work in regression models.
 
 From there, take three additional statistics courses from 1200-level and above. Except for STAT 1223 as this is a one credit writing intensive class meant exclusively for statistics majors.
 
@@ -31,21 +40,21 @@ To help out in understanding what to choose for your three additional statistics
 If you are just in it for the love of statistics, then simply take any of the 1200-level or 1300-level courses that peak your interest. Though do be in mind some classes don't always appear every year, and some almost always have just one section available. Below I have made a list of what typically gets offered each year.
 
 - STAT 1201 (Applied Nonparametric Statistics)
-    - This courses teaches you about statistical tests that try to make as few assumptions about the data as possible (including that the data isn't normal distributed).
-    - Statistical tests included, Wilcoxin, Fisher (sign), Ansari-Bradley, Miller (jackknife), Kruskal-Wallis, Kendall, and Kolmogorov-Smirnov.
+  - This courses teaches you about statistical tests that try to make as few assumptions about the data as possible (including that the data isn't normal distributed).
+  - Statistical tests included, Wilcoxin, Fisher (sign), Ansari-Bradley, Miller (jackknife), Kruskal-Wallis, Kendall, and Kolmogorov-Smirnov.
 - STAT 1211 (Applied Categorical Data Analysis)
-    - This course is aim at techniques needed for social science, medical science, and various other sciences where it's needed to investigate relationships between more qualitative variables.
-    - The courses deals with the chi-squared test and the standard 2x2 and RXC contingency tables.
+  - This course is aim at techniques needed for social science, medical science, and various other sciences where it's needed to investigate relationships between more qualitative variables.
+  - The courses deals with the chi-squared test and the standard 2x2 and RXC contingency tables.
 - STAT 1231 (Applied Experimental Design)
-    - This course is focused on how to design valid statistical experiments and how to analyze them.
+  - This course is focused on how to design valid statistical experiments and how to analyze them.
 - STAT 1261 (Principles of Data Science)
-    - More details are in the Data Scientist Path
+  - More details are in the Data Scientist Path
 - STAT 1301 (Statistical Packages)
-    - This courses teaches you how to perform various statistical methods and tests using SAS and R.
+  - This courses teaches you how to perform various statistical methods and tests using SAS and R.
 - STAT 1331 (Financial Econometrics)
-    - This course is focused on financial econometric models and how to use them to predict financial time series data (specifically looking at asset returns).
+  - This course is focused on financial econometric models and how to use them to predict financial time series data (specifically looking at asset returns).
 - STAT 1361 (Statistical Learning and Data Science)
-    - More details are in the Data Scientist Path
+  - More details are in the Data Scientist Path
 
 ### The Data Scientist Path
 
@@ -61,7 +70,7 @@ And that's two classes done. The third is a little bit up to you, but look aroun
 
 ### The Theoretical Path
 
-So this path is a little weird for the reason of it going against the intentions of the minor. The minor is focused on more applied statistics and is meant to be fairly practical. But, by how the requirements are define, two theoretical classes can be taken, though you'll likely need permission to do so. 
+So this path is a little weird for the reason of it going against the intentions of the minor. The minor is focused on more applied statistics and is meant to be fairly practical. But, by how the requirements are define, two theoretical classes can be taken, though you'll likely need permission to do so.
 
 So if you are in a position where you need more theoretical knowledge, say a more research oriented career, here is what to take.
 
@@ -69,7 +78,6 @@ So if you are in a position where you need more theoretical knowledge, say a mor
 - STAT 1632 (Intermediate Mathematical Statistics)
 
 Take these two plus an additional classes such as STAT 1361 and you'll have a very stronger theoretical statistics background. There are definitely places in machine learning where having a deep fundamental understanding in statistics will make some of the knowledge/material easier to understand and digest. Though do keep in mind you need to talk to the statistics advisor about taking these courses. As you need permissions to do so since they are more difficult versions of STAT 1151 (Introduction to Probability) and STAT 1152 (Mathematical Statistics) and you won't have the prerequisites for them.
-
 
 ## Should I take STAT 1151 as my statistics/math gen ed?
 

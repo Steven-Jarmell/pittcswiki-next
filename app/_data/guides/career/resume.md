@@ -66,16 +66,16 @@ As a college student expect this section to be pretty comprehensive. However, as
 
 ### Work Experience
 
-The work experience section is the most important section of one's resume. Aim to put as much relevant work experience as possible. If you are applying for a developer position, the recruiter is not interested in your experience as a barista at Starbucks. It would be better to take that space to talk about one of your programming projects. 
+The work experience section is the most important section of one's resume. Aim to put as much relevant work experience as possible. If you are applying for a developer position, the recruiter is not interested in your experience as a barista at Starbucks. It would be better to take that space to talk about one of your programming projects.
 
-That being said, if you don't have any relevant experience be sure to put as much work/volunteer experience as possible.  
-
+That being said, if you don't have any relevant experience be sure to put as much work/volunteer experience as possible.
 
 There's a lot of resources online on what to say for each work experience, but in general:
+
 - Highlight the impact of your work instead of the responsibilities
 - Use bullet points instead of paragraphs. This makes it much more readable!
 - Start each bullet with an **action verb**.
-- Quantify your achievements with numbers/metrics (improved speeds by 20%, reduced expenses by 10%,  generated $50,000 in revenue, etc.)
+- Quantify your achievements with numbers/metrics (improved speeds by 20%, reduced expenses by 10%, generated $50,000 in revenue, etc.)
 - Quality over Quantity. Mediocre work experiences may often not be as helpful as linking a project.
 - Put information that you can readily talk and answer questions about. Anything on your resume is fair game so you don't want to be caught off guard because you were lying.
 
@@ -190,7 +190,6 @@ If you don't want to go through the hassle of formatting your resume on Word or 
 
 - [FlowCV](https://flowcv.io/)
 - [Overleaf](https://www.overleaf.com/latex/templates) (For LaTeX templates)
-
 
 ## Cover Letters
 

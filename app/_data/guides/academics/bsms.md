@@ -41,7 +41,7 @@ complete the program. You can learn more about the program [here](https://www.cs
 
 ## Project Option
 
-- One additional graduate-level course 
+- One additional graduate-level course
 - MS project (CS 2910) with the pass fail grading basis
 - Project report and performance in presentation given to advisor
 
@@ -49,7 +49,7 @@ complete the program. You can learn more about the program [here](https://www.cs
 
 - MS-level research resulting in a written thesis
 - At least six credits of CS 2000 on a pass fail basis
-- Selection with help of advisor, of a thesis committee 
+- Selection with help of advisor, of a thesis committee
   - Has three faculty members
   - Two members must be from CS with one being your advisor (one from outside CS or University)
 - Final presentation conducted by the committee

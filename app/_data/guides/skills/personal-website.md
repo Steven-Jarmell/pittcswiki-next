@@ -1,6 +1,7 @@
 ---
 title: "Making a Personal Website"
-search_tags: ["website", "html", "template", "css", "portfolio", "project", "learn"]
+search_tags:
+  ["website", "html", "template", "css", "portfolio", "project", "learn"]
 ---
 
 > You can make a website and put it online for for free in less than 2 hours
@@ -30,7 +31,7 @@ Spend another 4 minutes looking at [this post](https://jgthms.com/web-design-in-
 1. Create an `index.html` file in this folder.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>REPLACE_ME</title>
@@ -73,6 +74,7 @@ You can get a subdirectory to host a website like [http://sites.pitt.edu/~you/](
 The technology department has created a detailed guide [here](https://www.technology.pitt.edu/help-desk/how-to-documents/creating-your-own-website)
 
 .
+
 ### Examples
 
 Be creative!

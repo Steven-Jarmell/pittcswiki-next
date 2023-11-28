@@ -29,7 +29,7 @@ A massive thing to consider when choosing a college/university is how much debt 
 - **Who's recruiting from the school?**
 
   - If you know what kind of companies you want to work at or have an idea of a field you want to break into, see who's showing up to career fairs, who's sponsoring events, and who's working with student organizations. See which industries are big near your school - these tend to be companies that will recruit from your school.
-  - Pittsburgh, for example, is an Autonomous Vehicle (AV) company paradise. Uber ATG recruits heavily from Pitt and CMU, and Argo AI *(unfortunately now defunct)* was even founded by a Pitt alumni! Other AV companies in the Pittsburgh area include: Waymo, Aurora, and Motional.
+  - Pittsburgh, for example, is an Autonomous Vehicle (AV) company paradise. Uber ATG recruits heavily from Pitt and CMU, and Argo AI _(unfortunately now defunct)_ was even founded by a Pitt alumni! Other AV companies in the Pittsburgh area include: Waymo, Aurora, and Motional.
   - The Pitt CSC has worked with several tech companies + the school is sponsored by several large Finance/Trading/Tech companies.
 
 - **How's the social life there?**

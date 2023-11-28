@@ -2,11 +2,11 @@
 title: "Getting Started with Git"
 ---
 
-[Git](https://git-scm.com/) is the most widely used [version control software](https://en.wikipedia.org/wiki/Version_control), and it is also free and open source. In a nutshell, git helps you and multiple others concurrently make changes to your software's source code while preserving version history. You will *without a doubt* encounter git during your CS journey, so getting comfortable with it now is a great way to have a head start at your next internship, job, personal project, etc.
+[Git](https://git-scm.com/) is the most widely used [version control software](https://en.wikipedia.org/wiki/Version_control), and it is also free and open source. In a nutshell, git helps you and multiple others concurrently make changes to your software's source code while preserving version history. You will _without a doubt_ encounter git during your CS journey, so getting comfortable with it now is a great way to have a head start at your next internship, job, personal project, etc.
 
 ## Git Overview
 
-**Git** is the version control software -- this is the part that is free, open source, and installable on your devices to enable you to use version control through the command line or [git's GUIs](https://git-scm.com/downloads/guis). Git enables you to [create **git repositories**](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), which record the change history of your project so that you can move between historical snapshots of your source code. Git repositories are *local to your device*, existing within the root directory of your project in a directory called `.git/`.
+**Git** is the version control software -- this is the part that is free, open source, and installable on your devices to enable you to use version control through the command line or [git's GUIs](https://git-scm.com/downloads/guis). Git enables you to [create **git repositories**](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository), which record the change history of your project so that you can move between historical snapshots of your source code. Git repositories are _local to your device_, existing within the root directory of your project in a directory called `.git/`.
 
 Repositories that exist on your device can also be synchronized with [**remote repositories**](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes), which can exist on computers on your local network or more likely some server on the internet. This is where familiar commands like `git pull` and `git push` come from. These commands are used to synchronize your local repository with the remote repository hosted on the internet. Remote repositories make it easier for multiple people to contribute to a single source code.
 
@@ -20,15 +20,15 @@ There are many different git workflows (ways to use git effectively to manage yo
 
 ## Recommended Resources
 
-* [Learn Git Branching](https://learngitbranching.js.org/) is a great tool for learning git visually. It particularly excels at visualizing git branching.
-* [Git and GitHub Crash Course](https://www.youtube.com/watch?v=SWYqp7iY_Tc) by Traversy Media is a good video that goes over both git and GitHub.
-* [Pro Git](https://git-scm.com/book/en/v2) is a classic book that gives a comprehensive overview of git fundamentals.
+- [Learn Git Branching](https://learngitbranching.js.org/) is a great tool for learning git visually. It particularly excels at visualizing git branching.
+- [Git and GitHub Crash Course](https://www.youtube.com/watch?v=SWYqp7iY_Tc) by Traversy Media is a good video that goes over both git and GitHub.
+- [Pro Git](https://git-scm.com/book/en/v2) is a classic book that gives a comprehensive overview of git fundamentals.
 
 ## Opinions
 
 ### Richie Goulazian - 5/6/2021
 
-You need to learn git. This is almost definitely the way that you will interact with large codebases. I'd recommend taking your time to really understand the basic structures of git -- repositories, remote repositories, branches -- so that you can *visualize* these structures in your head as you're running git commands.
+You need to learn git. This is almost definitely the way that you will interact with large codebases. I'd recommend taking your time to really understand the basic structures of git -- repositories, remote repositories, branches -- so that you can _visualize_ these structures in your head as you're running git commands.
 
 Once you have a basic understanding of git, just start using it always. You don't need to make a GitHub repository for every project necessarily, but you can always just run a quick `git init` to create a local repository when working on some small project just in case you need to revert changes or something. You ultimately want this stuff to just become muscle memory.
 

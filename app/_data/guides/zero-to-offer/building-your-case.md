@@ -102,11 +102,13 @@ You know what it takes to be a great software engineer. But, in the short term, 
 Your resume is very important here. And the best way to have a good resume is to be a good software engineer. However, in the short term, you likely have some skills already that you can display now. Read [here](/career/resume) on how to create a great resume.
 
 What you need
+
 - Create a great resume
 - Create a solid LinkedIn profile
 - Create a personal website (Time Permitting) (Read [here](/skills/personal-website/) on why and how to do that)
 
 What you do
+
 - Apply online everywhere. (See a list [here](https://github.com/pittcsc/Summer2024-Internships))
 - Apply on Handshake, LinkedIn, Jumpstart
 - Go to networking events (Career Fairs, CS Club Events)

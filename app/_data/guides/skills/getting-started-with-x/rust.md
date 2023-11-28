@@ -11,13 +11,14 @@ This guide is still a work-in-progress, so check out our [beginner guides sectio
 ### To Rust or Not To Rust
 
 #### When To Use Rust
+
 - You have enough time to learn the language
   - Rust has a very welcoming and inclusive community! Beginners are encouraged to ask questions! See [our community section below](#community-links) for links
 - Correctness, run speed, and safety are more important to you than development speed
 - Your program needs low level access
   - Though Rust is also great for high level programs :)
 - You are contributing to a project that already uses Rust
-  - While it *is* possible for Rust to interact with other languages (through `ffi` or Foreign Function Interface), most projects won't change their build system just for you!
+  - While it _is_ possible for Rust to interact with other languages (through `ffi` or Foreign Function Interface), most projects won't change their build system just for you!
 - Cross-platform development
   - Rust programs can be compiled for Windows, macOS, Linux, Android, iOS, FreeBSD, and more
   - Rust can be run in web browsers via WebAssembly (check out [`wasm-pack`](https://rustwasm.github.io/docs/wasm-pack/))
@@ -26,6 +27,7 @@ This guide is still a work-in-progress, so check out our [beginner guides sectio
   - Often required when building operating system or programs for micro-controllers (check out [AVR Rust](https://github.com/avr-rust)
 
 #### When Not To Use Rust
+
 - You don't want to spend the time to learn it
   - But you should! That's what this guide is for :)
 - You need speedy development
@@ -35,7 +37,7 @@ This guide is still a work-in-progress, so check out our [beginner guides sectio
     - There is an effort to re-implement necessary parts in rust, see [here](https://github.com/rust-lang/compiler-builtins)
     - This also makes things more difficult for OSs like OpenBSD that don't have OS-level backwards compatibility
 - You want a short compile time
-  - Compilation in Rust, generally speaking, is slow, but it *is* incremental (don't have to recompile everything if you only change a single file)
+  - Compilation in Rust, generally speaking, is slow, but it _is_ incremental (don't have to recompile everything if you only change a single file)
 - Your employer/upper management is afraid of "immature" languages, see [here](https://codecs.multimedia.cx/2020/09/why-rust-is-not-a-mature-programming-language/) for a similar opinion
   - Rust technically does not have a formal language specification
   - `rustc` is not self-hosted -- it requires bootstrapping
@@ -50,14 +52,15 @@ This guide is still a work-in-progress, so check out our [beginner guides sectio
 
 What is ownership? From [Chapter 4.1 of the Rust Book](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html):
 
-> - Each value in Rust has a variable that’s called its *owner*.
+> - Each value in Rust has a variable that’s called its _owner_.
 > - There can only be one owner at a time.
 > - When the owner goes out of scope, the value will be dropped.
 
 [Here](https://hashrust.com/blog/moves-copies-and-clones-in-rust/) is another decent primer on Rust memory.
 
 #### Moves
-You can change the owner of a value by "moving" the value. This is done by assigning it to a new variable. Note that if a resource implements `Copy`, then it will *not* be moved during an assignment (the value will just be copied into the new variable). See [Chapter 15.2 of Rust By Example](https://doc.rust-lang.org/rust-by-example/scope/move.html).
+
+You can change the owner of a value by "moving" the value. This is done by assigning it to a new variable. Note that if a resource implements `Copy`, then it will _not_ be moved during an assignment (the value will just be copied into the new variable). See [Chapter 15.2 of Rust By Example](https://doc.rust-lang.org/rust-by-example/scope/move.html).
 
 ```rs
 let x = Vec::<i32>::new(); // create a new vector of 32 bit integers, x is the owner
@@ -66,16 +69,18 @@ let y = x; // y is now the owner of the vector, x is no longer the owner
 ```
 
 #### Borrowing
-To access a value without changing ownership, we can *borrow* the value by taking a reference to it. This is similar to pointers in C and C++. However, keep in mind that the Rust compiler guarantees that references always point to valid values, so your program won't even compile if you try to use an invalid reference. See [Chapter 15.3 of Rust By Example](https://doc.rust-lang.org/rust-by-example/scope/borrow.html) for details.
 
-```rs 
-let x = Vec::<i32>::new(); 
+To access a value without changing ownership, we can _borrow_ the value by taking a reference to it. This is similar to pointers in C and C++. However, keep in mind that the Rust compiler guarantees that references always point to valid values, so your program won't even compile if you try to use an invalid reference. See [Chapter 15.3 of Rust By Example](https://doc.rust-lang.org/rust-by-example/scope/borrow.html) for details.
+
+```rs
+let x = Vec::<i32>::new();
 let y = &x; // y is reference to x
 let z = &x; // z is also a reference to x
 ```
 
 #### Clone vs Copy
-In Rust, if you want to make a duplicate of some data, you can use the method `.clone()`. Your data type must implement the trait `Clone`. However, if your data type implements `Copy`, then it will automatically be copied upon assignment. 
+
+In Rust, if you want to make a duplicate of some data, you can use the method `.clone()`. Your data type must implement the trait `Clone`. However, if your data type implements `Copy`, then it will automatically be copied upon assignment.
 
 ```rs
 let x = 10i32; // i32 implements Copy (as do all integers, floats, and chars)
@@ -128,7 +133,7 @@ governance structure -->
   - Weekly updates on the Rust environment and community
 - The `#rust-dev` channel in the Pitt CS Club Discord!
 
-### IDE Language Support 
+### IDE Language Support
 
 - [rust-analyzer](https://rust-analyzer.github.io/) is a must-have for beginners who want IDE support
   - Supports many IDEs/text editors, such as VSCode/VSCodium, NeoVim, Emacs, Sublime Text 3, Eclipse, Kate Text Editor, and more, see [the manual](https://rust-analyzer.github.io/manual.html) for all supported platforms.
@@ -150,6 +155,7 @@ governance structure -->
 - [Tour of Rust](https://tourofrust.com)
 
 ### Other Guides
+
 - [Rust for C++ Programmers](https://github.com/nrc/r4cppp) by Nick Cameron
 - [Rust for Embedded C Programmers](https://opentitan.org/book/doc/introduction.html)
 - [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
@@ -164,7 +170,7 @@ governance structure -->
 
 - [Rust Language Cheat Sheet](https://cheats.rs/)
 - [The Rust Standard Library](https://doc.rust-lang.org/stable/std/)
-- [The Rust Community’s Crate Registry](https://crates.io/) 
+- [The Rust Community’s Crate Registry](https://crates.io/)
   - "crates" are the standard for packaging Rust libraries
 - [A curated list of Rust code and resources](https://github.com/rust-unofficial/awesome-rust)
 

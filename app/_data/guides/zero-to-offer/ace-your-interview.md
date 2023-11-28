@@ -14,7 +14,7 @@ Reading the TechInterviewHandbook guides should take no more than 20 minutes!
 
 Additionally, it might be worth it to watch a real interview. [Here](https://www.youtube.com/watch?v=3Q_oYDQ2whs) is an example video.
 
-**Note on Prep**: These plans are for prepping before you begin applying to places. You should continue to practice while you apply to and interview with companies. Doing real interviews is the best way to improve! Also: **APPLY AS EARLY AS POSSIBLE*.
+**Note on Prep**: These plans are for prepping before you begin applying to places. You should continue to practice while you apply to and interview with companies. Doing real interviews is the best way to improve! Also: \*_APPLY AS EARLY AS POSSIBLE_.
 
 ## Knowledge is Key
 
@@ -80,7 +80,7 @@ After you can comfortably solve problems, definitely reach out to others to star
 It is important is developing a fundamental understanding of the problems. Here are a few great resources for recognizing patterns of LeetCode problems:
 
 - [LeetCode Patterns Blog](https://medium.com/leetcode-patterns)
-- [LeetCode Answer Templates](https://jeremyaguilon.me/blog/a_collection_of_whiteboard_interview_templates) 
+- [LeetCode Answer Templates](https://jeremyaguilon.me/blog/a_collection_of_whiteboard_interview_templates)
 - [14 Patterns for Coding Interviews](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
 
 If you are able to recognize and solve these patterns, then interviews will become much less difficult.
