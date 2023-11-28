@@ -1,3 +1,4 @@
+import Breadcrumb from "@/app/_components/Breadcrumb"
 import TermPill from "@/app/_components/Courses/TermPill"
 import RequirementsListing from "@/app/_components/Requirement/RequirementsListing"
 import { CourseInfoData } from "@/app/_data/CourseInfoData"
@@ -22,6 +23,7 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
   return (
     <div className="blog-post-container lg:w-[80vw] mx-auto">
+      <Breadcrumb slug={`courses/${displayCourseId}`} />
       <div className="blog-post">
         <div className="frontmatter">
           <h1 className="title">{displayCourseId}</h1>

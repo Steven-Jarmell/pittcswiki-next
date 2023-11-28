@@ -3,11 +3,13 @@ import CourseListing from "../_components/Courses/CourseListing"
 
 import { CourseInfoData } from "@/app/_data/CourseInfoData"
 import { courseCategorizer } from "@/app/_utils/course-categorizer"
+import Breadcrumb from "../_components/Breadcrumb"
 const categorizedCourses = courseCategorizer(CourseInfoData.courses)
 
 export default function CoursesPage() {
   return (
     <div className="lg:w-[80vw] mx-auto">
+      <Breadcrumb slug="courses" />
       <h1>Courses</h1>
       <p>
         If you are new to the CS classes,{" "}
