@@ -10,14 +10,14 @@ export default function GuidesPage() {
       <ul>
         <li>
           Considering the CS Major or a freshmen?{" "}
-          <Link href="/academics/prospective">Click here</Link>
+          <Link href="/guides/academics/prospective">Click here</Link>
         </li>
         <li>
           Looking for course reviews? <Link href="/courses/">Click here</Link>
         </li>
         <li>
           Want to learn how to land internship and job offers?{" "}
-          <Link href="/zero-to-offer/">Click here</Link>
+          <Link href="/guides/zero-to-offer/">Click here</Link>
         </li>
       </ul>
       <p>
@@ -33,13 +33,13 @@ export default function GuidesPage() {
         <h2>Popular</h2>
         <ul>
           <li>
-            <Link href={"/academics/scheduling"}>Scheduling</Link>
+            <Link href={"/guides/academics/scheduling"}>Scheduling</Link>
           </li>
           <li>
             <Link href={"/courses"}>Course Explorer</Link>
           </li>
           <li>
-            <Link href={"/zero-to-offer"}>Zero to Offer</Link>
+            <Link href={"/guides/zero-to-offer"}>Zero to Offer</Link>
           </li>
         </ul>
       </div>

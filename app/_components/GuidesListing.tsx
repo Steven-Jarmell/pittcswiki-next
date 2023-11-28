@@ -20,7 +20,7 @@ const importedGuides = [academicsGuide, careerGuide, skillsGuide, ztoGuide]
 let posts: any = []
 for (let guide of importedGuides) {
   let guideData = getMDFrontMatter(guide)
-  guideData["href"] = guideData.title.toLowerCase().replace(" ", "-")
+  guideData["href"] = "guides/" + guideData.title.toLowerCase().replaceAll(" ", "-")
   posts.push(guideData)
 }
 

@@ -23,7 +23,7 @@ export const LinkPanelItemList: LinkPanelItemType[] = [
     title: "Guides",
   },
   {
-    path: "/career/",
+    path: "/guides/career/",
     icon: careerIcon,
     iconAlt: "Career by Thuy Nguyen from the Noun Project",
     description:
@@ -31,7 +31,7 @@ export const LinkPanelItemList: LinkPanelItemType[] = [
     title: "Career",
   },
   {
-    path: "/academics/",
+    path: "/guides/academics/",
     icon: academicsIcon,
     iconAlt: "Academic by Pam Pyke from the Noun Project",
     description:
