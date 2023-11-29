@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About | Pitt CS Wiki"
+  title: "About | Pitt CS Wiki",
 }
 
 export default function AboutLayout({
@@ -11,7 +11,7 @@ export default function AboutLayout({
 }) {
   return (
     <>
-        <div className="max-w-2xl mx-auto">{children}</div>
+      <div className="max-w-2xl mx-auto">{children}</div>
     </>
   )
 }
