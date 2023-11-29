@@ -10,7 +10,7 @@ const Breadcrumb = ({ slug }: { slug: string }) => {
         {BreadCrumbArrow}
         <Link
           className="uppercase"
-          href={"/" + slugItems.slice(0, i).join("/")}
+          href={"/" + slugItems.slice(0, i + 1).join("/")}
         >
           {url}
         </Link>
