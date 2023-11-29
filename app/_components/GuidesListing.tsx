@@ -5,14 +5,14 @@ import careerGuide from "@/app/_data/guides/career/index.md"
 import skillsGuide from "@/app/_data/guides/skills/index.md"
 import ztoGuide from "@/app/_data/guides/zero-to-offer/index.md"
 
-const getMDFrontMatter = (md: any) => {
+export const getMDFrontMatter = (md: any) => {
   const { data } = matter(md)
 
   return {
     //slug: key.replace(/\.\/(.*)\/index\.md/, "$1"), // Extracting the folder name as the slug
     title: data.title || "",
     guides_blurb: data.guides_blurb || "",
-    href: ""
+    href: "",
   }
 }
 
@@ -20,7 +20,8 @@ const importedGuides = [academicsGuide, careerGuide, skillsGuide, ztoGuide]
 let posts: any = []
 for (let guide of importedGuides) {
   let guideData = getMDFrontMatter(guide)
-  guideData["href"] = "guides/" + guideData.title.toLowerCase().replaceAll(" ", "-")
+  guideData["href"] =
+    "guides/" + guideData.title.toLowerCase().replaceAll(" ", "-")
   posts.push(guideData)
 }
 
@@ -31,7 +32,7 @@ const guides = posts.map((post: any, index: any) => (
     key={`g_${index}`}
   >
     <div className="border bg-gray-200 shadow-sm h-64 p-4 transition hover:bg-gray-600 hover:text-white hover:shadow-md">
-      <h1>{post.title ? post.title : "BOOB"}</h1>
+      <h1>{post.title}</h1>
       <div>{post.guides_blurb}</div>
     </div>
   </Link>
