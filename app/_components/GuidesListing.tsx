@@ -9,10 +9,11 @@ export const getMDFrontMatter = (md: any) => {
   const { data } = matter(md)
 
   return {
-    //slug: key.replace(/\.\/(.*)\/index\.md/, "$1"), // Extracting the folder name as the slug
     title: data.title || "",
     guides_blurb: data.guides_blurb || "",
     href: "",
+    search_tags: "",
+    related: "",
   }
 }
 
