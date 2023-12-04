@@ -24,8 +24,6 @@ You need a GitHub account, know basic HTML, and be familiar with how to use Git.
 
 Spend another 4 minutes looking at [this post](https://jgthms.com/web-design-in-4-minutes/) on how to make your website look decent.
 
-<!-- TODO link webdev skill -->
-
 1. Make a GitHub repository named `username.github.io` where `username` is your GitHub user name.
 1. Make sure it is public
 1. Create an `index.html` file in this folder.

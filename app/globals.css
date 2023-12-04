@@ -7,6 +7,37 @@
   --pittgold: #ffb81c;
 }
 
+.markdown-toc {
+  margin-top: 5rem;
+  overflow: hidden;
+
+  .toc-heading-depth-2 {
+    margin-left: 20rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+  }
+
+  .toc-heading-depth-3 {
+    margin-left: 30rem;
+    @apply text-xs;
+  }
+
+  .toc-heading-depth-4 {
+    margin-left: 40rem;
+    @apply text-xs;
+  }
+
+  .toc-heading-depth-5 {
+    margin-left: 50rem;
+    @apply text-xs;
+  }
+
+  .toc-heading-depth-6 {
+    margin-left: 60rem;
+    @apply text-xs;
+  }
+}
+
 .reqs-dots {
   .course-req-dot {
     @apply w-2 h-2 inline-block rounded-full mr-1;
@@ -126,6 +157,7 @@
 }
 
 .btn.bg-pittgold:hover {
+  background-color: var(--pittgold);
   color: #654500;
   transition: opacity 0.3s ease;
   background-size: 30px 30px;

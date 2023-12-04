@@ -5,7 +5,16 @@ import careerGuide from "@/app/_data/guides/career/index.md"
 import skillsGuide from "@/app/_data/guides/skills/index.md"
 import ztoGuide from "@/app/_data/guides/zero-to-offer/index.md"
 
-export const getMDFrontMatter = (md: any) => {
+export type MDFrontMatterType = {
+  title: string
+  guides_blurb: string
+  href: string
+  search_tags: string
+  related: string
+  author: string
+}
+
+export const getMDFrontMatter = (md: string) => {
   const { data } = matter(md)
 
   return {
@@ -14,11 +23,19 @@ export const getMDFrontMatter = (md: any) => {
     href: "",
     search_tags: "",
     related: "",
-  }
+    author: "",
+  } as MDFrontMatterType
 }
 
-const importedGuides = [academicsGuide, careerGuide, skillsGuide, ztoGuide]
-let posts: any = []
+const importedGuides: string[] = [
+  academicsGuide.toString(),
+  careerGuide.toString(),
+  skillsGuide.toString(),
+  ztoGuide.toString(),
+]
+
+let posts = []
+
 for (let guide of importedGuides) {
   let guideData = getMDFrontMatter(guide)
   guideData["href"] =
@@ -26,7 +43,7 @@ for (let guide of importedGuides) {
   posts.push(guideData)
 }
 
-const guides = posts.map((post: any, index: any) => (
+const guides = posts.map((post, index) => (
   <Link
     className="inline-block p-1 w-full text-gray-800 px-4 py-4 md:w-1/2"
     href={post.href}
