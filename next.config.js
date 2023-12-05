@@ -8,19 +8,11 @@ const nextConfig = {
       test: /\.md$/,
       use: "raw-loader",
     })
-
-    config.resolve.fallback = {
-      // if you miss it, all the other options in fallback, specified
-      // by next.js will be dropped.
-      ...config.resolve.fallback,
-
-      fs: false, // the solution
-    }
     return config
   },
   experimental: {
-    nftTracing: true,
-  },
+    webpackBuildWorker: true
+  }
 }
 
 module.exports = withMDX(nextConfig)

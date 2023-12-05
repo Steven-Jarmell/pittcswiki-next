@@ -4,7 +4,7 @@ import WikiArticle from "@/components/WikiArticle"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { notFound } from "next/navigation"
 import { sortStrings } from "@/utils/sort-strings"
-import { promises as fs } from 'fs';
+import { promises as fs } from "fs"
 
 export type FileTitlesType = {
   title: string
@@ -31,7 +31,10 @@ export default async function GuidePage({
       notFound()
     }
 
-    const file = await fs.readFile(process.cwd() + `/data/guides/${curPath}`, 'utf-8')
+    const file = await fs.readFile(
+      process.cwd() + `/data/guides/${curPath}`,
+      "utf-8"
+    )
 
     const x = getMDFrontMatter(file)
     console.log(x)
@@ -67,21 +70,23 @@ export default async function GuidePage({
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
   console.log("Trying to find folder contents")
-  const folderContents = (await fs.readdir(process.cwd() + `/data/guides/${curPath}`))
-  console.log("Found folder contents")
+  const folderContents = await fs.readdir(
+    process.cwd() + `/data/guides/${curPath}`
+  )
+  console.log("Found folder contents at " + process.cwd() + `/data/guides/${curPath}`)
 
   let fileInfo: String[] = []
   let folderInfo: String[] = []
 
   folderContents.forEach((item: string) => {
-    if (!item.includes('md')) {
+    if (!item.includes("md")) {
       // It's a file
       folderInfo.push(item)
     } else {
       // It's a folder
-        if (item !== 'index.md') {
-            fileInfo.push(item)
-        }
+      if (item !== "index.md") {
+        fileInfo.push(item)
+      }
     }
   })
 
@@ -97,7 +102,10 @@ export default async function GuidePage({
     try {
       fileFrontMatter = getMDFrontMatter(curFile)
     } catch (e) {
-      const file = await fs.readFile(process.cwd() + `/data/guides/${curPath}/${fileName}`, 'utf-8')
+      const file = await fs.readFile(
+        process.cwd() + `/data/guides/${curPath}/${fileName}`,
+        "utf-8"
+      )
       fileFrontMatter = getMDFrontMatter(file)
     }
 
