@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { relatedGuidesParser } from "../_utils/related-guides-parser"
+import { relatedGuidesParser } from "@/utils/related-guides-parser"
 
 type RelatedGuidesProps = {
   related: any

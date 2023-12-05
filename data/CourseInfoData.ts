@@ -1,4 +1,11 @@
-import { CourseInfoDataType } from "../_types/CourseInfoDataType"
+import { CoursesDataType } from "@/types/CoursesDataType"
+
+type CourseInfoDataType = {
+  metadata: {
+    generated: string
+  }
+  courses: CoursesDataType[]
+}
 
 export const CourseInfoData: CourseInfoDataType = {
   metadata: {

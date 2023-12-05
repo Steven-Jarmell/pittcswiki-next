@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { SadFaceIcon } from "../_svgs/SadFaceIcon"
-import { OkayFaceIcon } from "../_svgs/OkayFaceIcon"
-import { GreatFaceIcon } from "../_svgs/GreatFaceIcon"
-import { FeedbackStates } from "../_enums/FeedbackStates"
+import { SadFaceIcon } from "@/svgs/SadFaceIcon"
+import { OkayFaceIcon } from "@/svgs/OkayFaceIcon"
+import { GreatFaceIcon } from "@/svgs/GreatFaceIcon"
+import { FeedbackStates } from "@/enums/FeedbackStates"
 
 function encode(data: any) {
   return Object.keys(data)

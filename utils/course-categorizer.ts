@@ -1,5 +1,5 @@
 import { getNumFromCourseId } from "./course-namer"
-import categoriesData from "@/app/_data/categories.json"
+import categoriesData from "@/data/categories.json"
 
 // This buckets courses into different types as specified in the
 // categories.json file required above

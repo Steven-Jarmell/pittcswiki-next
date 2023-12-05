@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { BreadCrumbArrow } from "../_svgs/BreadCrumbArrow"
+import { BreadCrumbArrow } from "@/svgs/BreadCrumbArrow"
 
 type BreadcrumbProps = {
   slug: string
@@ -10,8 +10,11 @@ const Breadcrumb = ({ slug }: BreadcrumbProps) => {
 
   const breadcrumbs = slugItems.map((url: string, i: number) => {
     return i < slugItems.length - 1 ? (
-      <span key={`breadcrumb_${url}`} className="flex">
-        {BreadCrumbArrow}
+      <span
+        key={`breadcrumb_${url}`}
+        className="flex items-center justify-center"
+      >
+        <div>{BreadCrumbArrow}</div>
         <Link
           className="uppercase"
           href={"/" + slugItems.slice(0, i + 1).join("/")}
@@ -20,7 +23,7 @@ const Breadcrumb = ({ slug }: BreadcrumbProps) => {
         </Link>
       </span>
     ) : (
-      <span className="uppercase flex" key={`breadcrumb_${url}`}>
+      <span className="uppercase flex items-center" key={`breadcrumb_${url}`}>
         {BreadCrumbArrow}
         {url.replace(".mdx", "").replace(".md", "")}
       </span>

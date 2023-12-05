@@ -1,5 +1,5 @@
-import { CourseInfoData } from "@/app/_data/CourseInfoData"
-import { cleanCourseId } from "@/app/_utils/course-namer"
+import { CourseInfoData } from "@/data/CourseInfoData"
+import { cleanCourseId } from "@/utils/course-namer"
 import Link from "next/link"
 
 const coursesWithWikiPages = CourseInfoData.courses.reduce(

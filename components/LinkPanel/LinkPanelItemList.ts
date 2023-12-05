@@ -1,8 +1,8 @@
-import coursesIcon from "@/app/_images/icons/courses.svg"
-import academicsIcon from "@/app/_images/icons/academic.svg"
-import careerIcon from "@/app/_images/icons/career.svg"
-import guidesIcon from "@/app/_images/icons/guides.svg"
-import sitemapIcon from "@/app/_images/icons/sitemap.svg"
+import coursesIcon from "@/images/icons/courses.svg"
+import academicsIcon from "@/images/icons/academic.svg"
+import careerIcon from "@/images/icons/career.svg"
+import guidesIcon from "@/images/icons/guides.svg"
+import sitemapIcon from "@/images/icons/sitemap.svg"
 import { LinkPanelItemType } from "./LinkPanelItem"
 
 export const LinkPanelItemList: LinkPanelItemType[] = [

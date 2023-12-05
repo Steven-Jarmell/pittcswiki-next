@@ -1,4 +1,4 @@
-import { EditIcon } from "../_svgs/EditIcon"
+import { EditIcon } from "@/svgs/EditIcon"
 
 const GITHUB_BASE_URL = `https://github.com/Steven-Jarmell/pittcswiki-next/blob/main/app/_data/`
 

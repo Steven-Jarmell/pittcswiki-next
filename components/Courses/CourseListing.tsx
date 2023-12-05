@@ -6,7 +6,7 @@ import PrereqLegend from "../Requirement/PrereqLegend"
 import Course from "./Course"
 import CourseInteractiveListing from "./CourseInteractiveListing"
 import CourseQuickView from "./CourseQuickView"
-import { CSLegendData } from "@/app/_enums/CSLegendData"
+import { CSLegendData } from "@/enums/CSLegendData"
 
 type CourseListingProps = {
   courseList: any

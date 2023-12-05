@@ -1,9 +1,9 @@
 import Link from "next/link"
-import academicsGuide from "@/app/_data/guides/academics/index.md"
-import careerGuide from "@/app/_data/guides/career/index.md"
-import skillsGuide from "@/app/_data/guides/skills/index.md"
-import ztoGuide from "@/app/_data/guides/zero-to-offer/index.md"
-import { getMDFrontMatter } from "../_utils/frontmatter-parser"
+import academicsGuide from "@/data/guides/academics/index.md"
+import careerGuide from "@/data/guides/career/index.md"
+import skillsGuide from "@/data/guides/skills/index.md"
+import ztoGuide from "@/data/guides/zero-to-offer/index.md"
+import { getMDFrontMatter } from "@/utils/frontmatter-parser"
 
 const importedGuides: string[] = [
   academicsGuide.toString(),

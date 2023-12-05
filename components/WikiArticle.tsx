@@ -7,7 +7,7 @@ import TableOfContents from "./TableOfContents"
 import RelatedGuides from "./RelatedGuides"
 import FeedbackWidget from "./FeedbackWidget"
 import EditOnGithub from "./EditOnGithub"
-import { MDFrontMatterType } from "@/app/_utils/frontmatter-parser"
+import { MDFrontMatterType } from "@/utils/frontmatter-parser"
 
 type WikiArticleProps = {
   file: string

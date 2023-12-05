@@ -1,4 +1,4 @@
-import { cleanCourseId } from "@/app/_utils/course-namer"
+import { cleanCourseId } from "@/utils/course-namer"
 
 type PrereqLegendProps = {
   legendData: any

@@ -1,14 +1,11 @@
-import Breadcrumb from "@/app/_components/Breadcrumb"
-import {
-  MDFrontMatterType,
-  getMDFrontMatter,
-} from "@/app/_components/GuidesListing"
-import WikiArticle from "@/app/_components/WikiArticle"
+import Breadcrumb from "@/components/Breadcrumb"
+import { MDFrontMatterType, getMDFrontMatter } from "@/utils/frontmatter-parser"
+import WikiArticle from "@/components/WikiArticle"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { read } from "to-vfile"
 import { matter } from "vfile-matter"
 import { notFound } from "next/navigation"
-import { sortStrings } from "@/app/_utils/sort-strings"
+import { sortStrings } from "@/utils/sort-strings"
 var requireContext = require("require-context")
 
 export type FileTitlesType = {
@@ -30,12 +27,13 @@ export default async function GuidePage({
     // Import file
     let curFile = null
     try {
-      curFile = (await import(`@/app/_data/guides/${curPath}`)).default
+      curFile = (await import(`data/guides/${curPath}`)).default
     } catch (e) {
+      console.log(e)
       notFound()
     }
 
-    const file = await read(`./app/_data/guides/${curPath}`)
+    const file = await read(`data/guides/${curPath}`)
 
     matter(file)
 
@@ -56,8 +54,7 @@ export default async function GuidePage({
   // Based on the name, dynamically import the index.md file for it
   let pageIndexFile
   try {
-    pageIndexFile = (await import(`@/app/_data/guides/${curPath}/index.md`))
-      .default
+    pageIndexFile = (await import(`@/data/guides/${curPath}/index.md`)).default
   } catch (e) {
     notFound()
   }
@@ -68,7 +65,7 @@ export default async function GuidePage({
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
   const folderContents = requireContext(
-    `../../../app/_data/guides/${curPath}`,
+    `../../../data/guides/${curPath}`,
     true,
     /^(?!.*index\.md).*$/
   ).keys()
@@ -94,7 +91,7 @@ export default async function GuidePage({
 
   for (let fileName of fileInfo) {
     // Import file
-    const curFile = (await import(`@/app/_data/guides/${curPath}/${fileName}`))
+    const curFile = (await import(`@/data/guides/${curPath}/${fileName}`))
       .default
 
     // Get its frontmatter
@@ -102,7 +99,7 @@ export default async function GuidePage({
     try {
       fileFrontMatter = getMDFrontMatter(curFile)
     } catch (e) {
-      const file = await read(`./app/_data/guides/${curPath}/${fileName}`)
+      const file = await read(`./data/guides/${curPath}/${fileName}`)
       matter(file)
       fileFrontMatter = file.data.matter
     }
@@ -115,7 +112,7 @@ export default async function GuidePage({
 
   for (let folderName of folderInfo) {
     let folderIndexFile = (
-      await import(`@/app/_data/guides/${curPath}/${folderName}/index.md`)
+      await import(`@/data/guides/${curPath}/${folderName}/index.md`)
     ).default
     // Get the frontmatter from the index
 

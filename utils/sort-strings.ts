@@ -1,4 +1,4 @@
-import { FileTitlesType } from "../guides/[...path]/page"
+import { FileTitlesType } from "@/app/guides/[...path]/page"
 
 export const sortStrings = (a: FileTitlesType, b: FileTitlesType) => {
   // Convert titles to lowercase for case-insensitive sorting

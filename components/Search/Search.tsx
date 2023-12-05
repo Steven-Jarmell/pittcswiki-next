@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import searchIcon from "@/app/_images/search-icon.svg"
+import searchIcon from "@/images/search-icon.svg"
 
 const Search = () => {
   return (

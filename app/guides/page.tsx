@@ -1,6 +1,6 @@
-import Breadcrumb from "@/app/_components/Breadcrumb"
+import Breadcrumb from "@/components/Breadcrumb"
 import Link from "next/link"
-import GuidesListing from "../_components/GuidesListing"
+import GuidesListing from "@/components/GuidesListing"
 
 export default function GuidesPage() {
   return (

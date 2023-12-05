@@ -1,5 +1,5 @@
-import { cleanCourseId, cleanCourseTitle } from "@/app/_utils/course-namer"
-import { CSLegendData } from "@/app/_enums/CSLegendData"
+import { cleanCourseId, cleanCourseTitle } from "@/utils/course-namer"
+import { CSLegendData } from "@/enums/CSLegendData"
 import RequirementDots from "../Requirement/RequirementDots"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
@@ -12,7 +12,7 @@ interface CourseRequirements {
   }
 }
 
-const COURSE_REQUIREMENTS: CourseRequirements = require("@/app/_data/requirements.json")
+const COURSE_REQUIREMENTS: CourseRequirements = require("@/data/requirements.json")
 
 export type CourseProps = {
   id: string

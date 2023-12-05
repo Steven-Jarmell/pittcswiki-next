@@ -1,7 +1,7 @@
 import { useState } from "react"
 import FeedbackForm from "./FeedbackForm"
 import FeedbackTitle from "./FeedbackTitle"
-import { FeedbackStates } from "../_enums/FeedbackStates"
+import { FeedbackStates } from "@/enums/FeedbackStates"
 
 const FeedbackWidget = () => {
   const [formState, setFormState] = useState(FeedbackStates.DOC)
