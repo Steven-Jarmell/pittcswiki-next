@@ -67,7 +67,7 @@ export default async function GuidePage({
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
   const folderContents = requireContext(
-    process.cwd() + `/data/guides/${curPath}`,
+    `../../../data/guides/${curPath}`,
     true,
     /^(?!.*index\.md).*$/
   ).keys()
