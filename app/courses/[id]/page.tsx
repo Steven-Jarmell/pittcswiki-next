@@ -1,7 +1,8 @@
-import Breadcrumb from "@/app/_components/Breadcrumb"
-import TermPill from "@/app/_components/Courses/TermPill"
-import RequirementsListing from "@/app/_components/Requirement/RequirementsListing"
-import { CourseInfoData } from "@/app/_data/CourseInfoData"
+import Breadcrumb from "@/components/Breadcrumb"
+import TermPill from "@/components/Courses/TermPill"
+import RequirementsListing from "@/components/Requirement/RequirementsListing"
+import { CourseInfoData } from "@/data/CourseInfoData"
+
 interface CourseRequirements {
   [key: string]: {
     requirementsString: string
@@ -10,13 +11,13 @@ interface CourseRequirements {
   }
 }
 
-const COURSE_REQUIREMENTS: CourseRequirements = require("@/app/_data/requirements.json")
+const COURSE_REQUIREMENTS: CourseRequirements = require("@/data/requirements.json")
 
 export default function CoursePage({ params }: { params: { id: string } }) {
   const CURRENT_COURSE_ID = params.id
 
   const courseData = CourseInfoData.courses.filter(
-    ({ id }) => id === CURRENT_COURSE_ID
+    ({ id }: any) => id === CURRENT_COURSE_ID
   )[0]
   const displayCourseId = courseData.id
   const courseTitle = courseData.title

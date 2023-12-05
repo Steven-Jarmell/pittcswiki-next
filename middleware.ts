@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import { CourseInfoData } from "./app/_data/CourseInfoData"
+import { CourseInfoData } from "@/data/CourseInfoData"
 
 // Pretty inefficient algorithm to check if the id is in the courses list
 const checkIfValidPage = (id: string) => {

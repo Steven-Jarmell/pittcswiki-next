@@ -1,5 +1,5 @@
 import Image from "next/image"
-import RocPic from "@/app/_images/roc.png"
+import RocPic from "@/images/roc.png"
 
 export default function Custom404() {
   return (

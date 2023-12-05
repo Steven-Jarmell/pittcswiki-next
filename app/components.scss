@@ -140,37 +140,6 @@ header {
   }
 }
 
-.markdown-toc {
-  margin-top: -1rem;
-  overflow: hidden;
-
-  .toc-heading-depth-2 {
-    margin-left: 20rem;
-    margin-top: 1rem;
-    text-decoration: underline;
-  }
-
-  .toc-heading-depth-3 {
-    margin-left: 30rem;
-    @apply text-xs;
-  }
-
-  .toc-heading-depth-4 {
-    margin-left: 40rem;
-    @apply text-xs;
-  }
-
-  .toc-heading-depth-5 {
-    margin-left: 50rem;
-    @apply text-xs;
-  }
-
-  .toc-heading-depth-6 {
-    margin-left: 60rem;
-    @apply text-xs;
-  }
-}
-
 button.bg-pittgold.border {
   border-color: #efa300;
 }

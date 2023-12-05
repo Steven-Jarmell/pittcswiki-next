@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About | Pitt CS Wiki",
+  title: "Guide | Pitt CS Wiki",
 }
 
-export default function AboutLayout({
+export default function GuideLayout({
   children,
 }: {
   children: React.ReactNode

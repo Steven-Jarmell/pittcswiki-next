@@ -1,9 +1,10 @@
 import Link from "next/link"
-import CourseListing from "../_components/Courses/CourseListing"
+import CourseListing from "@/components/Courses/CourseListing"
 
-import { CourseInfoData } from "@/app/_data/CourseInfoData"
-import { courseCategorizer } from "@/app/_utils/course-categorizer"
-import Breadcrumb from "../_components/Breadcrumb"
+import { CourseInfoData } from "@/data/CourseInfoData"
+import { courseCategorizer } from "@/utils/course-categorizer"
+import Breadcrumb from "@/components/Breadcrumb"
+
 const categorizedCourses = courseCategorizer(CourseInfoData.courses)
 
 export default function CoursesPage() {
