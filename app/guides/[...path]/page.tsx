@@ -27,13 +27,13 @@ export default async function GuidePage({
     // Import file
     let curFile = null
     try {
-      curFile = (await import(`data/guides/${curPath}`)).default
+      curFile = (await import(`@/data/guides/${curPath}`)).default
     } catch (e) {
       console.log(e)
       notFound()
     }
 
-    const file = await read(`data/guides/${curPath}`)
+    const file = await read(`./data/guides/${curPath}`)
 
     matter(file)
 
