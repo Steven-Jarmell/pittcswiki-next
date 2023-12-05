@@ -2,11 +2,8 @@ import Breadcrumb from "@/components/Breadcrumb"
 import { MDFrontMatterType, getMDFrontMatter } from "@/utils/frontmatter-parser"
 import WikiArticle from "@/components/WikiArticle"
 import { MDXRemote } from "next-mdx-remote/rsc"
-import { read } from "to-vfile"
-import matter from "gray-matter"
 import { notFound } from "next/navigation"
 import { sortStrings } from "@/utils/sort-strings"
-var requireContext = require("require-context")
 import { promises as fs } from 'fs';
 
 export type FileTitlesType = {
@@ -66,26 +63,20 @@ export default async function GuidePage({
 
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
-  const folderContents = requireContext(
-    `../../../data/guides/${curPath}`,
-    true,
-    /^(?!.*index\.md).*$/
-  ).keys()
+  const folderContents = (await fs.readdir(process.cwd() + `/data/guides/${curPath}`))
 
   let fileInfo: String[] = []
   let folderInfo: String[] = []
 
   folderContents.forEach((item: string) => {
-    const parts = item.split("\\") // Assuming '\\' is the path separator
-    if (parts.length === 1) {
+    if (!item.includes('md')) {
       // It's a file
-      fileInfo.push(item)
-    } else if (parts.length > 1) {
+      folderInfo.push(item)
+    } else {
       // It's a folder
-      const folderName = parts[0]
-      if (!folderInfo.includes(folderName)) {
-        folderInfo.push(folderName)
-      }
+        if (item !== 'index.md') {
+            fileInfo.push(item)
+        }
     }
   })
 
