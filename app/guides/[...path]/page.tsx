@@ -33,7 +33,7 @@ export default async function GuidePage({
       notFound()
     }
 
-    const file = await read(`./data/guides/${curPath}`)
+    const file = await read(`data/guides/${curPath}`)
 
     matter(file)
 
@@ -65,7 +65,7 @@ export default async function GuidePage({
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
   const folderContents = requireContext(
-    `../../../data/guides/${curPath}`,
+    `./data/guides/${curPath}`,
     true,
     /^(?!.*index\.md).*$/
   ).keys()
