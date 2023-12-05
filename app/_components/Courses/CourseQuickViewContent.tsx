@@ -13,12 +13,19 @@ interface CourseRequirements {
 
 const COURSE_REQUIREMENTS: CourseRequirements = require("@/app/_data/requirements.json")
 
+type CourseQuickViewContentProps = {
+  id: any
+  description: any
+  title: any
+  terms_offered: any
+}
+
 const CourseQuickViewContent = ({
   id,
   description,
   title,
   terms_offered,
-}: any) => {
+}: CourseQuickViewContentProps) => {
   return (
     <>
       <h1 className="mb-2">{cleanCourseId(id)}</h1>

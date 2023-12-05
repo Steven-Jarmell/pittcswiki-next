@@ -1,4 +1,4 @@
-import { CSLegendData } from "../Requirement/enum"
+import { CSLegendData } from "@/app/_enums/CSLegendData"
 import Course from "./Course"
 
 const CourseInteractiveListing = ({

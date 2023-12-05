@@ -3,8 +3,15 @@
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 
-import { LinkPanelItemType } from "@/app/_types/LinkPanelItemType"
 import Link from "next/link"
+
+export type LinkPanelItemType = {
+  path: string
+  icon: any
+  iconAlt: string
+  description: string
+  title: string
+}
 
 const LinkPanelItem = ({
   path,

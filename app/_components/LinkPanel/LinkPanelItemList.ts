@@ -3,7 +3,7 @@ import academicsIcon from "@/app/_images/icons/academic.svg"
 import careerIcon from "@/app/_images/icons/career.svg"
 import guidesIcon from "@/app/_images/icons/guides.svg"
 import sitemapIcon from "@/app/_images/icons/sitemap.svg"
-import { LinkPanelItemType } from "@/app/_types/LinkPanelItemType"
+import { LinkPanelItemType } from "./LinkPanelItem"
 
 export const LinkPanelItemList: LinkPanelItemType[] = [
   {

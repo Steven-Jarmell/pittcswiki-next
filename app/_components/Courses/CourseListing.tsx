@@ -2,13 +2,21 @@
 
 import { useState } from "react"
 import CourseControls from "./CourseControls"
-import { CSLegendData } from "../Requirement/enum"
 import PrereqLegend from "../Requirement/PrereqLegend"
 import Course from "./Course"
 import CourseInteractiveListing from "./CourseInteractiveListing"
 import CourseQuickView from "./CourseQuickView"
+import { CSLegendData } from "@/app/_enums/CSLegendData"
 
-const CourseListing = ({ courseList, courseCategories }: any) => {
+type CourseListingProps = {
+  courseList: any
+  courseCategories: any
+}
+
+const CourseListing = ({
+  courseList,
+  courseCategories,
+}: CourseListingProps) => {
   const [state, setState] = useState({
     currentCourse: { id: "" },
     showTitles: false,

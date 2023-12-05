@@ -1,4 +1,9 @@
-const FeedbackTitle = ({ onClick, show }: any) => (
+type FeedbackTitleProps = {
+  onClick: any
+  show: any
+}
+
+const FeedbackTitle = ({ onClick, show }: FeedbackTitleProps) => (
   <button
     onClick={onClick}
     className={

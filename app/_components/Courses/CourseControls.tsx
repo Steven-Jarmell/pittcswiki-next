@@ -1,16 +1,24 @@
-const CourseControls = ({ filters, setFilters }: any) => {
+type CourseControlsProps = {
+  filters: any
+  setFilters: any
+}
+
+const CourseControls = ({ filters, setFilters }: CourseControlsProps) => {
   const handleSetTermOffered = (e: any) => {
     setFilters({ ...filters, termOfferedFilter: e.target.value })
   }
+
   const turnOffTermOfferedFilter = () => {
     setFilters({ ...filters, termOfferedFilter: "OFF" })
   }
+
   const handleCheckbox = (e: any) => {
     const newFilters = { ...filters, [e.target.name]: e.target.checked }
     if (e.target.name === "showHidden" && e.target.checked)
       newFilters.termOfferedFilter = "OFF"
     setFilters(newFilters)
   }
+
   return (
     <div className="">
       <div className="md:flex align-center items-center">

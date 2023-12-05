@@ -1,6 +1,10 @@
 import { requirementsTraverser } from "./helper-methods"
 
-const RequirementsListing = ({ requirements }: any) => {
+type RequirementsListingProps = {
+  requirements: any
+}
+
+const RequirementsListing = ({ requirements }: RequirementsListingProps) => {
   if (!requirements) {
     return null
   }

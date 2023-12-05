@@ -13,7 +13,11 @@ const coursesWithWikiPages = CourseInfoData.courses.reduce(
   {}
 )
 
-const CourseLink = ({ id }: any) => {
+type CourseLinkProps = {
+  id: any
+}
+
+const CourseLink = ({ id }: CourseLinkProps) => {
   if (!id || typeof id !== "string") return null
   const cleanedId = cleanCourseId(id)
   if (coursesWithWikiPages[id]) {

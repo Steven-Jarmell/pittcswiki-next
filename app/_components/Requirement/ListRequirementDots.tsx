@@ -1,9 +1,8 @@
 type ListRequirementDotsProps = {
-  color: any
-  i: number
+  req: any
 }
 
-const ListRequirementDots = ({ req }: any) => {
+const ListRequirementDots = ({ req }: ListRequirementDotsProps) => {
   const list = req.map((color: any, i: any) => (
     <span
       style={{ background: color }}

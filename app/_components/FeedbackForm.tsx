@@ -2,6 +2,7 @@ import { useState } from "react"
 import { SadFaceIcon } from "../_svgs/SadFaceIcon"
 import { OkayFaceIcon } from "../_svgs/OkayFaceIcon"
 import { GreatFaceIcon } from "../_svgs/GreatFaceIcon"
+import { FeedbackStates } from "../_enums/FeedbackStates"
 
 function encode(data: any) {
   return Object.keys(data)
@@ -9,17 +10,16 @@ function encode(data: any) {
     .join("&")
 }
 
-export const States = {
-  DOC: "DOC",
-  FORM: "FORM",
-  THANK_YOU: "THANK_YOU",
+type FeedbackFormProps = {
+  setFormState: any
+  show: any
 }
 
-const FeedbackForm = ({ setFormState, show }: any) => {
-  const [state, setState] = useState<any>({})
+const FeedbackForm = ({ setFormState, show }: FeedbackFormProps) => {
+  const [sentiment, setSentiment] = useState<string>("")
 
   const handleChange = (e: any) => {
-    setState({ ...state, [e.target.name]: e.target.value })
+    setSentiment(e.target.value)
   }
 
   const [sending, setSending] = useState(false)
@@ -32,12 +32,12 @@ const FeedbackForm = ({ setFormState, show }: any) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "feedback",
-        ...state,
+        sentiment,
         location: window.location,
       }),
     }).then(() => {
       setSending(false)
-      setFormState(States.THANK_YOU)
+      setFormState(FeedbackStates.THANK_YOU)
     })
   }
 
@@ -71,9 +71,7 @@ const FeedbackForm = ({ setFormState, show }: any) => {
             <span> Rate your experience</span>
             <div className="flex justify-between">
               <div
-                className={
-                  "sentiment " + (state.sentiment === "poor" && " active")
-                }
+                className={"sentiment " + (sentiment === "poor" && " active")}
               >
                 <input
                   type="radio"
@@ -85,9 +83,7 @@ const FeedbackForm = ({ setFormState, show }: any) => {
                 <span className="font-bold text-gray-800">Poor</span>
               </div>
               <div
-                className={
-                  "sentiment " + (state.sentiment === "okay" && " active")
-                }
+                className={"sentiment " + (sentiment === "okay" && " active")}
               >
                 <input
                   type="radio"
@@ -99,9 +95,7 @@ const FeedbackForm = ({ setFormState, show }: any) => {
                 <span className="font-bold text-gray-800">Okay</span>
               </div>
               <div
-                className={
-                  "sentiment " + (state.sentiment === "great" && " active")
-                }
+                className={"sentiment " + (sentiment === "great" && " active")}
               >
                 <input
                   type="radio"
@@ -129,7 +123,7 @@ const FeedbackForm = ({ setFormState, show }: any) => {
           <button
             type="button"
             className="btn"
-            onClick={() => setFormState(States.DOC)}
+            onClick={() => setFormState(FeedbackStates.DOC)}
           >
             Cancel
           </button>

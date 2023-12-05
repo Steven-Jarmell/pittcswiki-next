@@ -1,6 +1,10 @@
 import { cleanCourseId } from "@/app/_utils/course-namer"
 
-const PrereqLegend = ({ legendData }: any) => {
+type PrereqLegendProps = {
+  legendData: any
+}
+
+const PrereqLegend = ({ legendData }: PrereqLegendProps) => {
   const legend = Object.keys(legendData)
     .sort()
     .map((courseId) => {

@@ -2,8 +2,13 @@ import { EditIcon } from "../_svgs/EditIcon"
 
 const GITHUB_BASE_URL = `https://github.com/Steven-Jarmell/pittcswiki-next/blob/main/app/_data/`
 
-const EditOnGithub = ({ slug, isIndexPage }: any) => {
-  const parts = slug.split("/").filter((s: any) => s)
+type EditOnGithubProps = {
+  slug: string
+  isIndexPage: boolean
+}
+
+const EditOnGithub = ({ slug, isIndexPage }: EditOnGithubProps) => {
+  const parts = slug.split("/").filter((s) => s)
   let githubFileLink = parts.join("/")
   if (isIndexPage) {
     githubFileLink += "/index"

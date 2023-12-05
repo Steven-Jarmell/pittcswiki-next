@@ -1,9 +1,9 @@
-import { CourseItemType } from "@/app/_types/CourseItemType"
 import { cleanCourseId, cleanCourseTitle } from "@/app/_utils/course-namer"
-import { CSLegendData } from "../Requirement/enum"
+import { CSLegendData } from "@/app/_enums/CSLegendData"
 import RequirementDots from "../Requirement/RequirementDots"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+
 interface CourseRequirements {
   [key: string]: {
     requirementsString: string
@@ -14,6 +14,17 @@ interface CourseRequirements {
 
 const COURSE_REQUIREMENTS: CourseRequirements = require("@/app/_data/requirements.json")
 
+export type CourseProps = {
+  id: string
+  title: string
+  onClick: any
+  showTitle: any
+  isSelected: any
+  customCss?: any
+  isPrereqFilterModeOn: any
+  colorLegend: any
+}
+
 const Course = ({
   id,
   title,
@@ -23,7 +34,7 @@ const Course = ({
   customCss,
   isPrereqFilterModeOn = false,
   colorLegend = {},
-}: CourseItemType) => {
+}: CourseProps) => {
   const router = useRouter()
 
   // Supply a color legend if you would like to apply colors!

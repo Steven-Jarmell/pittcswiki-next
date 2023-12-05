@@ -7,7 +7,7 @@ import TableOfContents from "./TableOfContents"
 import RelatedGuides from "./RelatedGuides"
 import FeedbackWidget from "./FeedbackWidget"
 import EditOnGithub from "./EditOnGithub"
-import { MDFrontMatterType } from "./GuidesListing"
+import { MDFrontMatterType } from "@/app/_utils/frontmatter-parser"
 
 type WikiArticleProps = {
   file: string
@@ -34,7 +34,7 @@ const WikiArticle = ({
 
   const headingsArray = hashLines.map((line) => {
     const depth = line.lastIndexOf("#") + 1 // Count the number of '#' characters
-    let value = line.trim().replaceAll(/^[# | *]+\s*/g, "")
+    let value = line.trim().replaceAll("#", "").replaceAll("*", "")
     return {
       depth: depth,
       value: value,

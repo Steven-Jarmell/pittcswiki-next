@@ -1,23 +1,24 @@
 import { useState } from "react"
-import FeedbackForm, { States } from "./FeedbackForm"
+import FeedbackForm from "./FeedbackForm"
 import FeedbackTitle from "./FeedbackTitle"
+import { FeedbackStates } from "../_enums/FeedbackStates"
 
 const FeedbackWidget = () => {
-  const [formState, setFormState] = useState(States.DOC)
+  const [formState, setFormState] = useState(FeedbackStates.DOC)
 
   return (
     <>
       <FeedbackTitle
-        show={formState === States.DOC}
-        onClick={() => setFormState(States.FORM)}
+        show={formState === FeedbackStates.DOC}
+        onClick={() => setFormState(FeedbackStates.FORM)}
       />
       <FeedbackForm
-        show={formState === States.FORM}
+        show={formState === FeedbackStates.FORM}
         setFormState={setFormState}
       />
       <div
         className={
-          formState === States.THANK_YOU
+          formState === FeedbackStates.THANK_YOU
             ? "bg-pink-400 p-4 text-pink-900"
             : "hidden"
         }

@@ -1,12 +1,20 @@
 import CourseQuickViewContent from "./CourseQuickViewContent"
 
+type CourseQuickViewProps = {
+  id: any
+  description?: any
+  title?: any
+  terms_offered?: any
+  children: any
+}
+
 const CourseQuickView = ({
   id,
   description,
   title,
   terms_offered,
   children,
-}: any) => {
+}: CourseQuickViewProps) => {
   return id ? (
     <CourseQuickViewContent {...{ id, description, title, terms_offered }} />
   ) : (

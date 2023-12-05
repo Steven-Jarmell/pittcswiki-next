@@ -1,4 +1,8 @@
-const OrRequirementDots = ({ req }: any) => {
+type OrRequirementDotsProps = {
+  req: any
+}
+
+const OrRequirementDots = ({ req }: OrRequirementDotsProps) => {
   const list = req.map((color: any, i: any) => (
     <span
       style={{ background: color }}
