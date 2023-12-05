@@ -28,7 +28,6 @@ export default async function GuidePage({
     try {
       curFile = (await import(`@/data/guides/${curPath}`)).default
     } catch (e) {
-      console.log(e)
       notFound()
     }
 
@@ -38,10 +37,8 @@ export default async function GuidePage({
     )
 
     const x = getMDFrontMatter(file)
-    console.log(x)
 
     const fileFrontMatter = x as MDFrontMatterType
-
     return (
       <WikiArticle
         file={curFile}
@@ -55,7 +52,6 @@ export default async function GuidePage({
 
   // If we are not rendering a file, show folder contents
   // Based on the name, dynamically import the index.md file for it
-  console.log("Looking for page index file")
   let pageIndexFile
   try {
     pageIndexFile = (await import(`@/data/guides/${curPath}/index.md`)).default
@@ -63,18 +59,15 @@ export default async function GuidePage({
     notFound()
   }
 
-  console.log("Found page index file")
-
   let startIndex = pageIndexFile.lastIndexOf("---") + 3
   let relevantContent = pageIndexFile.slice(startIndex, -1)
 
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
-  console.log("Trying to find folder contents")
+
   const folderContents = await fs.readdir(path.join(
     process.cwd(),`/data/guides/${curPath}`)
   )
-  console.log("Found folder contents at " + process.cwd() + `/data/guides/${curPath}`)
 
   let fileInfo: String[] = []
   let folderInfo: String[] = []

@@ -24,7 +24,7 @@ const WikiArticle = ({
   gitAuthorTime,
   lastUpdatedString,
 }: WikiArticleProps) => {
-  let startIndex = file.lastIndexOf("---") + 3
+  let startIndex = file.indexOf('---', 2)
   let relevantContent = file.slice(startIndex, -1)
 
   const lines = relevantContent.split("\n")
