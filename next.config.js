@@ -10,6 +10,9 @@ const nextConfig = {
     })
     return config
   },
+  experimental: { 
+    nftTracing: true 
+  },
 }
 
 module.exports = withMDX(nextConfig)
