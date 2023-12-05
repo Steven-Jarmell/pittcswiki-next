@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc"
 import { notFound } from "next/navigation"
 import { sortStrings } from "@/utils/sort-strings"
 import { promises as fs } from "fs"
+import path from "path"
 
 export type FileTitlesType = {
   title: string
@@ -70,8 +71,8 @@ export default async function GuidePage({
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
   console.log("Trying to find folder contents")
-  const folderContents = await fs.readdir(
-    process.cwd() + `/data/guides/${curPath}`
+  const folderContents = await fs.readdir(path.join(
+    process.cwd(),`/data/guides/${curPath}`)
   )
   console.log("Found folder contents at " + process.cwd() + `/data/guides/${curPath}`)
 
