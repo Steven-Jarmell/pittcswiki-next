@@ -3,10 +3,11 @@ import { MDFrontMatterType, getMDFrontMatter } from "@/utils/frontmatter-parser"
 import WikiArticle from "@/components/WikiArticle"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { read } from "to-vfile"
-import { matter } from "vfile-matter"
+import matter from "gray-matter"
 import { notFound } from "next/navigation"
 import { sortStrings } from "@/utils/sort-strings"
 var requireContext = require("require-context")
+import { promises as fs } from 'fs';
 
 export type FileTitlesType = {
   title: string
@@ -33,11 +34,12 @@ export default async function GuidePage({
       notFound()
     }
 
-    const file = await read(process.cwd() + `/data/guides/${curPath}`)
+    const file = await fs.readFile(process.cwd() + `/data/guides/${curPath}`, 'utf-8')
 
-    matter(file)
+    const x = getMDFrontMatter(file)
+    console.log(x)
 
-    const fileFrontMatter = file.data.matter as MDFrontMatterType
+    const fileFrontMatter = x as MDFrontMatterType
 
     return (
       <WikiArticle
@@ -99,9 +101,8 @@ export default async function GuidePage({
     try {
       fileFrontMatter = getMDFrontMatter(curFile)
     } catch (e) {
-      const file = await read(process.cwd() + `/data/guides/${curPath}/${fileName}`)
-      matter(file)
-      fileFrontMatter = file.data.matter
+      const file = await fs.readFile(process.cwd() + `/data/guides/${curPath}/${fileName}`, 'utf-8')
+      fileFrontMatter = getMDFrontMatter(file)
     }
 
     fileTitles.push({
