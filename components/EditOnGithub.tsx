@@ -1,6 +1,6 @@
 import { EditIcon } from "@/svgs/EditIcon"
 
-const GITHUB_BASE_URL = `https://github.com/Steven-Jarmell/pittcswiki-next/blob/main/app/_data/`
+const GITHUB_BASE_URL = `https://github.com/Steven-Jarmell/pittcswiki-next/blob/main/data/`
 
 type EditOnGithubProps = {
   slug: string
