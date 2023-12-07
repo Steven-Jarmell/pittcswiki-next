@@ -1,7 +1,11 @@
 import Link from "next/link"
+// @ts-ignore 
 import academicsGuide from "@/data/guides/academics/index.md"
+// @ts-ignore 
 import careerGuide from "@/data/guides/career/index.md"
+// @ts-ignore 
 import skillsGuide from "@/data/guides/skills/index.md"
+// @ts-ignore 
 import ztoGuide from "@/data/guides/zero-to-offer/index.md"
 import { getMDFrontMatter } from "@/utils/frontmatter-parser"
 
