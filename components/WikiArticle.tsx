@@ -1,6 +1,3 @@
-"use client"
-
-import { MDXRemote } from "next-mdx-remote/rsc"
 import Breadcrumb from "./Breadcrumb"
 import FreshnessDisclaimer from "./FreshnessDisclaimer"
 import TableOfContents from "./TableOfContents"
@@ -8,6 +5,8 @@ import RelatedGuides from "./RelatedGuides"
 import FeedbackWidget from "./FeedbackWidget"
 import EditOnGithub from "./EditOnGithub"
 import { MDFrontMatterType } from "@/utils/frontmatter-parser"
+import Markdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 type WikiArticleProps = {
   file: string
@@ -24,7 +23,7 @@ const WikiArticle = ({
   gitAuthorTime,
   lastUpdatedString,
 }: WikiArticleProps) => {
-  let startIndex = file.indexOf('---', 2)
+  let startIndex = file.indexOf("---", 2)
   let relevantContent = file.slice(startIndex, -1)
 
   const lines = relevantContent.split("\n")
@@ -55,7 +54,7 @@ const WikiArticle = ({
           </div>
           <FreshnessDisclaimer lastUpdated={gitAuthorTime} />
           <div className="mt-4 blog-post-content">
-            <MDXRemote source={relevantContent} />
+            <Markdown remarkPlugins={[remarkGfm]}>{relevantContent}</Markdown>
           </div>
           <RelatedGuides related={frontmatter.related} />
           <div className={"my-8 sm:w-full md:w-auto"}>

@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import FeedbackForm from "./FeedbackForm"
 import FeedbackTitle from "./FeedbackTitle"

@@ -1,6 +1,6 @@
 import CourseQuickViewContent from "./CourseQuickViewContent"
 
-type CourseQuickViewProps = {
+export type CourseQuickViewProps = {
   id: any
   description?: any
   title?: any

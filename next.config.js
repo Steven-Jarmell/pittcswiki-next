@@ -1,5 +1,3 @@
-const withMDX = require("@next/mdx")()
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "md", "ts", "tsx"],
@@ -8,11 +6,16 @@ const nextConfig = {
       test: /\.md$/,
       use: "raw-loader",
     })
+
+    config.module.rules.push({
+      test: /\.mdx$/,
+      use: "raw-loader",
+    })
     return config
   },
   experimental: {
-    webpackBuildWorker: true
-  }
+    webpackBuildWorker: true,
+  },
 }
 
-module.exports = withMDX(nextConfig)
+module.exports = nextConfig
