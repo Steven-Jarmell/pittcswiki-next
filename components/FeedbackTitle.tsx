@@ -1,6 +1,6 @@
 type FeedbackTitleProps = {
-  onClick: any
-  show: any
+  onClick: () => void
+  show: boolean
 }
 
 const FeedbackTitle = ({ onClick, show }: FeedbackTitleProps) => (

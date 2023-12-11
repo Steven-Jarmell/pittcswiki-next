@@ -16,6 +16,11 @@ type WikiArticleProps = {
   lastUpdatedString: string
 }
 
+export type HeadingType = {
+    depth: number;
+    value: string;
+}
+
 const WikiArticle = ({
   file,
   path,
@@ -31,7 +36,7 @@ const WikiArticle = ({
   // Filter lines that start with '#'
   const hashLines = lines.filter((line) => line.trim().startsWith("#"))
 
-  const headingsArray = hashLines.map((line) => {
+  const headingsArray: HeadingType[] = hashLines.map((line) => {
     const depth = line.lastIndexOf("#") + 1 // Count the number of '#' characters
     let value = line.trim().replaceAll("#", "").replaceAll("*", "")
     return {

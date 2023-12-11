@@ -1,10 +1,12 @@
-const truncate = (word: any) => {
+import { HeadingType } from "./WikiArticle"
+
+const truncate = (word: string) => {
   if (word.length > 28) return word.substring(0, 18) + "..."
   return word
 }
 
 type TableOfContentsProps = {
-  headings: any
+  headings: HeadingType[]
 }
 
 export default function TableOfContents({ headings }: TableOfContentsProps) {
@@ -12,9 +14,9 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
 
   return (
     <ul className="hidden lg:block fixed lg:left-0 list-none ml-0 markdown-toc">
-      {headings.map((heading: any) => (
+      {headings.map((heading, i) => (
         <li
-          key={heading}
+          key={i}
           className={"font-bold toc-heading-depth-" + heading.depth}
           style={{ marginLeft: heading.depth + "rem" }}
         >
