@@ -11,6 +11,12 @@ const nextConfig = {
       test: /\.mdx$/,
       use: "raw-loader",
     })
+
+    config.resolve.fallback = { 
+      fs: false, 
+      path:false 
+    }
+
     return config
   },
   experimental: {
