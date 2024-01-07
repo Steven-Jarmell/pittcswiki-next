@@ -9,7 +9,59 @@ type SiteMapTree = {
   children: SiteMapTree[]
 }
 
-const SiteMapList = () => {
+const sortAlphaByTitle = (a: SiteMapTree, b: SiteMapTree) => {
+  if (a.title < b.title) return -1
+  if (a.title > b.title) return 1
+  return 0
+}
+
+const TreeView = ({tree}: any) => {
+  return (
+    <ul className="list-disc mb-0">
+      {tree.href && (
+        <li>
+          {/*<a href={tree.slug}>{tree.title}</a>*/}
+          <Link
+            href={tree.href}
+            key={tree.id}>{tree.title}
+          </Link>
+        </li>
+      )}
+      {tree.children &&
+        tree.children
+          .sort(sortAlphaByTitle)
+          .map((child: SiteMapTree) => <TreeView key={child.id} tree={child} />)}
+    </ul>
+  )
+}
+
+const CardView = ({ tree }: any) => {
+  return (
+    <>
+      {tree.href && (
+        <a
+          href={tree.href}
+          className="w-full h-32 p-4 border text-gray-800 bg-gray-200 shadow-sm transition hover:bg-gray-600 hover:font-bold hover:shadow-md"
+        >
+          {tree.title}
+        </a>
+      )}
+      {tree.children &&
+        tree.href !== "/courses/" &&
+        tree.children.sort(sortAlphaByTitle).map((child: any) => (
+          <a
+            key={child.id}
+            href={child.href}
+            className="w-full h-32 p-4 border text-gray-800 bg-gray-200 shadow-sm transition hover:text-white hover:bg-gray-600 hover:font-bold hover:shadow-md"
+          >
+            {child.title}
+          </a>
+        ))}
+    </>
+  )
+}
+
+const SiteMapList = ({type}: any) => {
   const fs = require('fs')
   const path = require('path')
   let id = 0
@@ -87,38 +139,13 @@ const SiteMapList = () => {
   /* Add Markdown Pages under "data/guides" to tree */
   getPagesUnderRoute(path.join(process.cwd(), 'data'), 'guides', root)
 
-  const sortAlphaByTitle = (a: SiteMapTree, b: SiteMapTree) => {
-    if (a.title < b.title) return -1
-    if (a.title > b.title) return 1
-    return 0
-  }
-
-  const TreeView = ({tree}: any) => {
-    return (
-      <ul className="list-disc mb-0">
-        {tree.href && (
-          <li>
-            {/*<a href={tree.slug}>{tree.title}</a>*/}
-            <Link
-              href={tree.href}
-              key={tree.id}>{tree.title}</Link>
-          </li>
-        )}
-        {tree.children &&
-          tree.children
-            .sort(sortAlphaByTitle)
-            .map((child: SiteMapTree) => <TreeView key={child.id} tree={child} />)}
-      </ul>
+  return type === 'card' ? (
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <CardView tree={root}></CardView>
+      </div>
+    ) : (
+      <TreeView tree={root}></TreeView>
     )
-  }
-
-  return (
-    <div>
-        <div>
-            <TreeView tree={root}></TreeView>
-        </div>
-    </div>
-  )
 }
 
 export default SiteMapList
