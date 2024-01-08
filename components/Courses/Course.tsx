@@ -17,12 +17,10 @@ const COURSE_REQUIREMENTS: CourseRequirements = require("@/data/requirements.jso
 export type CourseProps = {
   id: string
   title: string
-  onClick: any
-  showTitle: any
-  isSelected: any
-  customCss?: any
-  isPrereqFilterModeOn: any
-  colorLegend: any
+  onClick: () => void
+  showTitle: boolean
+  isSelected: boolean
+  isPrereqFilterModeOn: boolean
 }
 
 const Course = ({
@@ -31,9 +29,7 @@ const Course = ({
   onClick,
   showTitle,
   isSelected,
-  customCss,
   isPrereqFilterModeOn = false,
-  colorLegend = {},
 }: CourseProps) => {
   const router = useRouter()
 
@@ -41,7 +37,7 @@ const Course = ({
   const displayId = cleanCourseId(id)
   const displayTitle = cleanCourseTitle(title)
   const display = showTitle ? displayTitle : displayId
-  const highlightColor = isPrereqFilterModeOn ? colorLegend[id] : null
+  const highlightColor = isPrereqFilterModeOn ? CSLegendData[id] : null
   // this is confusing because it has the html for both mobile format and
   // regular
   return (
@@ -52,14 +48,15 @@ const Course = ({
         className={
           "hidden md:inline-block course-pill select-none" +
           (isSelected ? " selected" : "") +
-          (showTitle || isPrereqFilterModeOn ? " w-auto " : "") +
-          (customCss ? customCss : "")
+          (showTitle || isPrereqFilterModeOn ? " w-auto " : "")
         }
         style={
-          highlightColor && {
-            borderColor: highlightColor,
-            boxShadow: `0px 0px 4px ${highlightColor}`,
-          }
+          highlightColor
+            ? {
+                borderColor: highlightColor,
+                boxShadow: `0px 0px 4px ${highlightColor}`,
+              }
+            : {}
         }
         onClick={onClick}
         onDoubleClick={() => router.push(`/courses/${id}`)}

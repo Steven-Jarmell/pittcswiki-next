@@ -1,4 +1,10 @@
-import { ChangeEvent, Dispatch, FormEvent, SetStateAction, useState } from "react"
+import {
+  ChangeEvent,
+  Dispatch,
+  FormEvent,
+  SetStateAction,
+  useState,
+} from "react"
 import { SadFaceIcon } from "@/svgs/SadFaceIcon"
 import { OkayFaceIcon } from "@/svgs/OkayFaceIcon"
 import { GreatFaceIcon } from "@/svgs/GreatFaceIcon"
@@ -18,7 +24,9 @@ type FeedbackFormProps = {
 const FeedbackForm = ({ setFormState, show }: FeedbackFormProps) => {
   const [sentiment, setSentiment] = useState<string>("")
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setSentiment(e.target.value)
   }
 

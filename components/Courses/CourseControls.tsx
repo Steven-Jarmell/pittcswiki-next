@@ -1,18 +1,21 @@
+import { Dispatch, SetStateAction } from "react"
+import { CourseListingState } from "./CourseListing"
+
 type CourseControlsProps = {
-  filters: any
-  setFilters: any
+  filters: CourseListingState
+  setFilters: Dispatch<SetStateAction<CourseListingState>>
 }
 
 const CourseControls = ({ filters, setFilters }: CourseControlsProps) => {
-  const handleSetTermOffered = (e: any) => {
-    setFilters({ ...filters, termOfferedFilter: e.target.value })
+  const handleSetTermOffered = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setFilters({ ...filters, termOfferedFilter: e.currentTarget.value })
   }
 
   const turnOffTermOfferedFilter = () => {
     setFilters({ ...filters, termOfferedFilter: "OFF" })
   }
 
-  const handleCheckbox = (e: any) => {
+  const handleCheckbox = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newFilters = { ...filters, [e.target.name]: e.target.checked }
     if (e.target.name === "showHidden" && e.target.checked)
       newFilters.termOfferedFilter = "OFF"

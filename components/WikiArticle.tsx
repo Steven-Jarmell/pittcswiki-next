@@ -17,8 +17,8 @@ type WikiArticleProps = {
 }
 
 export type HeadingType = {
-    depth: number;
-    value: string;
+  depth: number
+  value: string
 }
 
 const WikiArticle = ({

@@ -1,3 +1,9 @@
+export type TermsOfferedType = {
+  SPRING: boolean
+  FALL: boolean
+  SUMMER: boolean
+}
+
 export type CoursesDataType = {
   sci_href: string
   title: string
@@ -6,9 +12,5 @@ export type CoursesDataType = {
   description: string
   requirements: string
   replaces?: string
-  terms_offered: {
-    SPRING: boolean
-    FALL: boolean
-    SUMMER: boolean
-  }
+  terms_offered: TermsOfferedType
 }

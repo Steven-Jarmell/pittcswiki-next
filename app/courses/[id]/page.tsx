@@ -20,15 +20,14 @@ export default function CoursePage({ params }: { params: { id: string } }) {
   const CURRENT_COURSE_ID = params.id
 
   const courseData = CourseInfoData.courses.filter(
-    ({ id }: { id : string}) => id === CURRENT_COURSE_ID
+    ({ id }: { id: string }) => id === CURRENT_COURSE_ID
   )[0]
   const displayCourseId = courseData.id
   const courseTitle = courseData.title
 
-useEffect(() => {
+  useEffect(() => {
     SetDocumentTitle(`${params.id} - ${courseTitle}`)
-}, [])
-
+  }, [])
 
   return (
     <div className="blog-post-container lg:w-[80vw] mx-auto">

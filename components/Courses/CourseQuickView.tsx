@@ -1,11 +1,12 @@
+import { TermsOfferedType } from "@/types/CoursesDataType"
 import CourseQuickViewContent from "./CourseQuickViewContent"
 
 export type CourseQuickViewProps = {
-  id: any
-  description?: any
-  title?: any
-  terms_offered?: any
-  children: any
+  id: string
+  description?: string
+  title?: string
+  terms_offered?: TermsOfferedType
+  children: React.ReactNode
 }
 
 const CourseQuickView = ({
