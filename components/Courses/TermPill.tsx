@@ -1,4 +1,10 @@
-const TermPills = ({ termsMap }: any) => {
+import { TermsOfferedType } from "@/types/CoursesDataType"
+
+type TermPillProps = {
+  termsMap: TermsOfferedType
+}
+
+const TermPills = ({ termsMap }: TermPillProps) => {
   return (
     <div className="m-0">
       <span

@@ -1,4 +1,4 @@
-export const CSLegendData = {
+export const CSLegendData: { [course: string]: string } = {
   CS1502: "#f44336", // red
   CS0441: "#E91E63", // pink (light red)
   CS0447: "#ff9800", // dark yellow

@@ -2,7 +2,7 @@ import Link from "next/link"
 import { relatedGuidesParser } from "@/utils/related-guides-parser"
 
 type RelatedGuidesProps = {
-  related: any
+  related: string[]
 }
 
 const RelatedGuides = ({ related }: RelatedGuidesProps) => {
@@ -14,7 +14,7 @@ const RelatedGuides = ({ related }: RelatedGuidesProps) => {
     <div className="text-sm border-t border-b py-4">
       <h4 className="mb-1">Related Resources</h4>
       <ul className="mb-0">
-        {links.map(({ link, title }: any, i: any) =>
+        {links.map(({ link, title }, i: number) =>
           !link || !title ? null : (
             <li key={i}>
               <Link href={link}>{title}</Link>

@@ -1,30 +1,38 @@
-import { useState } from "react"
+import {
+  ChangeEvent,
+  Dispatch,
+  FormEvent,
+  SetStateAction,
+  useState,
+} from "react"
 import { SadFaceIcon } from "@/svgs/SadFaceIcon"
 import { OkayFaceIcon } from "@/svgs/OkayFaceIcon"
 import { GreatFaceIcon } from "@/svgs/GreatFaceIcon"
 import { FeedbackStates } from "@/enums/FeedbackStates"
 
-function encode(data: any) {
+function encode(data: Record<string, string>) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
 
 type FeedbackFormProps = {
-  setFormState: any
-  show: any
+  setFormState: Dispatch<SetStateAction<string>>
+  show: boolean
 }
 
 const FeedbackForm = ({ setFormState, show }: FeedbackFormProps) => {
   const [sentiment, setSentiment] = useState<string>("")
 
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setSentiment(e.target.value)
   }
 
   const [sending, setSending] = useState(false)
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setSending(true)
     fetch("/", {
@@ -33,7 +41,7 @@ const FeedbackForm = ({ setFormState, show }: FeedbackFormProps) => {
       body: encode({
         "form-name": "feedback",
         sentiment,
-        location: window.location,
+        location: window.location.href,
       }),
     }).then(() => {
       setSending(false)

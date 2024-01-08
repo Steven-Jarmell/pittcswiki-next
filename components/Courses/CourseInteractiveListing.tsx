@@ -1,13 +1,22 @@
 import { CSLegendData } from "@/enums/CSLegendData"
 import Course from "./Course"
+import { CourseListingState } from "./CourseListing"
+import { CategoriesDataType } from "@/data/CategoriesData"
+
+type CourseInteractiveListingProps = {
+  setCurrentCourse: (course: { id: string }) => void
+  filters: CourseListingState
+  courseCategories: CategoriesDataType[]
+  selectedCourseId: string
+}
 
 const CourseInteractiveListing = ({
   setCurrentCourse,
   filters: { showTitles, showHidden, termOfferedFilter, isPrereqFilterModeOn },
   courseCategories,
   selectedCourseId,
-}: any) => {
-  return courseCategories.map((category: any) => {
+}: CourseInteractiveListingProps) => {
+  return courseCategories.map((category) => {
     const show = showHidden || category.display !== "hidden"
     const courses =
       termOfferedFilter === "OFF"

@@ -62,8 +62,7 @@ export default async function GuidePage({
 
   const indexFileFrontMatter = getMDFrontMatter(pageIndexFile)
 
-
-  let fileTitles: FileTitlesType[] = await GetFolderInformation(curPath);
+  let fileTitles: FileTitlesType[] = await GetFolderInformation(curPath)
 
   // Show grid of guides
   return (

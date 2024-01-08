@@ -1,5 +1,6 @@
+import { CoursesDataType } from "@/types/CoursesDataType"
 import { getNumFromCourseId } from "./course-namer"
-import categoriesData from "@/data/categories.json"
+import { CategoriesData } from "@/data/CategoriesData"
 
 // This buckets courses into different types as specified in the
 // categories.json file required above
@@ -19,20 +20,16 @@ const applyFilter = (courseMap: any, filter: any) => {
     .filter((course) => !!course)
 }
 
-let categorized: any = null
-
 export const courseCategorizer = (
-  courseList: any,
-  categories = categoriesData
+  courseList: CoursesDataType[],
+  categories = CategoriesData
 ) => {
-  if (categorized) return categorized
-
   const courseMap = courseList.reduce((prev: any, current: any) => {
     prev[current.id] = { used: true, data: current }
     return prev
   }, {})
 
-  categorized = categories.map((category: any) => {
+  let categorized = categories.map((category) => {
     category.courses = category.courses
       .flatMap((id: any) => {
         if (courseMap[id]) {
@@ -44,7 +41,7 @@ export const courseCategorizer = (
           return applyFilter(courseMap, id)
         }
       })
-      .filter((course: any) => !!course)
+      .filter((course: CoursesDataType) => !!course)
     return category
   })
 

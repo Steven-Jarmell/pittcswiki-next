@@ -7,10 +7,20 @@ import Course from "./Course"
 import CourseInteractiveListing from "./CourseInteractiveListing"
 import CourseQuickView from "./CourseQuickView"
 import { CSLegendData } from "@/enums/CSLegendData"
+import { CourseInfoDataType } from "@/data/CourseInfoData"
+import { CategoriesDataType } from "@/data/CategoriesData"
 
 type CourseListingProps = {
-  courseList: any
-  courseCategories: any
+  courseList: CourseInfoDataType
+  courseCategories: CategoriesDataType[]
+}
+
+export type CourseListingState = {
+  currentCourse: { id: string }
+  showTitles: boolean
+  showHidden: boolean
+  isPrereqFilterModeOn: boolean
+  termOfferedFilter: string
 }
 
 const CourseListing = ({
@@ -23,7 +33,7 @@ const CourseListing = ({
     showHidden: false,
     isPrereqFilterModeOn: false,
     termOfferedFilter: "OFF",
-  })
+  } as CourseListingState)
 
   const [showCourseFilters, setShowCourseFilters] = useState(false)
 
@@ -60,26 +70,24 @@ const CourseListing = ({
           based on its dot colors:
         </p>
         <Course
-          key={"CS1622"}
+          key="CS1622"
           showTitle={state.showTitles}
           id="CS1622"
           title="INTRO TO COMPILERS"
           isSelected={state.currentCourse.id === "CS1622" ? true : false}
           onClick={() => null}
           isPrereqFilterModeOn={true}
-          colorLegend={CSLegendData}
         />
       </div>
       <div className="flex flex-col-reverse md:flex-row">
         <div className="md:w-2/3 md:pr-1">
           <CourseInteractiveListing
             filters={state}
-            setCurrentCourse={(course: any) =>
+            setCurrentCourse={(course: { id: string }) =>
               setState({ ...state, currentCourse: course })
             }
             selectedCourseId={state.currentCourse.id}
             courseCategories={courseCategories}
-            courses={courseList.courses}
           />
         </div>
         <div

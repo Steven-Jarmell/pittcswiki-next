@@ -1,6 +1,6 @@
 import { CoursesDataType } from "@/types/CoursesDataType"
 
-type CourseInfoDataType = {
+export type CourseInfoDataType = {
   metadata: {
     generated: string
   }

@@ -4,7 +4,7 @@ import { FileTitlesType } from "@/app/guides/[...path]/page"
 import { getMDFrontMatter } from "@/utils/frontmatter-parser"
 
 export const GetFolderInformation = async (curPath: string) => {
-    // Get the names of the files and folders in this folder
+  // Get the names of the files and folders in this folder
   const folderContents = await fs.readdir(
     path.join(process.cwd(), `/data/guides/${curPath}`)
   )

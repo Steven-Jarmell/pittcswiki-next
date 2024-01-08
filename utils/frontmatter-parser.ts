@@ -5,7 +5,7 @@ export type MDFrontMatterType = {
   guides_blurb: string
   href: string
   search_tags: string
-  related: string
+  related: string[]
   author: string
 }
 
@@ -17,7 +17,7 @@ export const getMDFrontMatter = (md: string) => {
     guides_blurb: data.guides_blurb || "",
     href: "",
     search_tags: "",
-    related: "",
+    related: [""],
     author: "",
   } as MDFrontMatterType
 }
