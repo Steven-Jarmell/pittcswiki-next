@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb"
 import Link from "next/link"
 import GuidesListing from "@/components/GuidesListing"
+import SiteMapList from "@/components/SiteMapList"
 
 export default function GuidesPage() {
   return (
@@ -45,7 +46,7 @@ export default function GuidesPage() {
       </div>
       <div className="mb-8">
         <h2>Full Guide Listing</h2>
-        {/* Site List Component goes here */}
+        <SiteMapList />
       </div>
       <p>
         Still curious about something but cannot find it? Please let us know and
