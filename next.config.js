@@ -12,9 +12,9 @@ const nextConfig = {
       use: "raw-loader",
     })
 
-    config.resolve.fallback = { 
-      fs: false, 
-      path:false 
+    config.resolve.fallback = {
+      fs: false,
+      path: false,
     }
 
     return config
