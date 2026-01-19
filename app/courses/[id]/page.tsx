@@ -27,7 +27,7 @@ export default function CoursePage({ params }: { params: { id: string } }) {
 
   useEffect(() => {
     SetDocumentTitle(`${params.id} - ${courseTitle}`)
-  }, [])
+  }, [courseTitle, params.id])
 
   return (
     <div className="blog-post-container lg:w-[80vw] mx-auto">

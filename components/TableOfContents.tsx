@@ -5,6 +5,15 @@ const truncate = (word: string) => {
   return word
 }
 
+// Create URL-safe slugs that match rehypeSlug behavior
+const createSlug = (text: string) => {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "") // Remove special characters
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+}
+
 type TableOfContentsProps = {
   headings: HeadingType[]
 }
@@ -13,18 +22,27 @@ export default function TableOfContents({ headings }: TableOfContentsProps) {
   if (!headings || headings.length < 4) return null
 
   return (
-    <ul className="hidden lg:block fixed lg:left-0 list-none ml-0 markdown-toc">
-      {headings.map((heading, i) => (
-        <li
-          key={i}
-          className={"font-bold toc-heading-depth-" + heading.depth}
-          style={{ marginLeft: heading.depth + "rem" }}
-        >
-          <a className="text-gray-600" href={"#" + heading.value}>
-            {truncate(heading.value)}
-          </a>
-        </li>
-      ))}
+    <ul className="hidden lg:block list-none ml-0 markdown-toc">
+      {headings.map((heading, i) => {
+        const isSectionHeader = heading.depth === 2
+        const isSubsection = heading.depth > 2
+
+        return (
+          <li
+            key={i}
+            className={`font-bold toc-heading-depth-${heading.depth} ${
+              isSectionHeader ? "sidebar-section-header" : ""
+            } ${isSubsection ? "sidebar-subsection" : ""}`}
+          >
+            <a
+              className={`sidebar-nav-link ${isSectionHeader ? "" : ""}`}
+              href={"#" + createSlug(heading.value)}
+            >
+              {truncate(heading.value)}
+            </a>
+          </li>
+        )
+      })}
     </ul>
   )
 }

@@ -1,11 +1,12 @@
 ---
 title: "Getting Started with Hackathons"
 author: "Alex Zharichenko"
+updated by: "Brayden Nguyen"
 ---
 
 ## What is a hackathon?
 
-A hackathon is generally, as MLH best described, an "invention marathon". These events typically last between 24-36 hours where either by yourself or preferably with a team of about 2-6 people come up with an idea and build a prototype. These events are either themed where they have problems in mind for you to try to solve. Or they are a general hackathon where the focus is more on learning or trying something new.
+A hackathon is, as MLH puts it best, an “invention marathon.” These events usually run for 24–48 hours, during which you and a team of 2–4 people (or even on your own) brainstorm an idea, build a prototype, and compete for prizes. Hackathons often have themed "tracks," such as healthcare, education, or machine learning, that determine how your project will be evaluated by the judges. Participants of all skill levels are welcome so do not be afraid of the judging.
 
 ## Why go to a hackathon?
 
@@ -23,6 +24,10 @@ There are many reasons to do so!
   - Seriously, I'll admit it. I'm too lazy during the school year to build or make anything. But in a hackathon you get the time, motivation, and inspiration to go through and build something. And with everyone around you doing that same thing it seriously motivates you.
 - And most importantly, they can be incredibly rewarding.
   - A common point I wanna hear out of any hackathon participant is that, regardless if someone won or not, they are proud of what they accomplished and built and did not care that they didn't win.
+- They are a great resume builder.
+  - I always encourage people to include metrics on their resume, and winning a hackathon is one of the strongest metrics you can showcase.
+  - With the rise of AI and “vibe coding,” it has become harder to distinguish a genuinely strong project from a weaker one. Because hackathons involve formal judging, they provide extra assurance that your project demonstrates real quality.
+  - Most hackathon projects are built in teams, similar to real workplace collaboration. Employers highly value candidates who have collaboration skills and these stories perfectly fit most behvioral interview questions.
 
 ## What makes a good hackathon?
 
@@ -33,6 +38,19 @@ Judging at a hackathon is a difficult task because it's essentially asking the q
 Some other hackathons focus more on the ideas and solutions behind your hack with having a prototype being a little supplemental to your pitch. If a hackathon balances it right with favoring people who make great progress on a prototype more then the experience should be fine.
 
 But the worst hackathons devolve into pitching competitions. Pitching competitions suck because they are more focused on presenting an idea rather than building and hacking something together. These hackathons can easily breakdown when prizes are announced because teams that didn't build anything can win because of their pitch, souring your experience since you actually tried to make something. These are more frequent in themed hackathons than general hackathons.
+
+## What do I build?
+
+The most important step of any hackathon is coming up with an idea. Such a simple task has tripped up myself and tons of other teams I have talked to at hackathons across the country. Here is the step-by-step process I invented to help you come up with the perfect project idea for you.
+
+1. List out as many of your interests or topics under a specfici track as possible:
+   - interests: fashion, rock climbing, chess, etc.
+   - Environment track: farming, natural disasters, carbon emissions, etc.
+2. List out as many of the CS related topics you are interested in:
+   - e.g., game development, natural language processing (NLP), computer vision (CV), blockchain, etc.
+3. Pick one from each list and try to come up with a way to combine the two topics:
+   - farming + computer vision = crop disease detection
+   - chess + AR = over the board chess helper
 
 ## Tips for attending a hackathon
 
@@ -50,7 +68,7 @@ Here at the Pitt, we have a great diversity of hackathons for you to attend over
 
 ### SteelHacks
 
-Steelhacks is one of the largest hackathons in Pittsburgh and is an MLH affiliated event. This is put on directly by the School of Computing and Information and the is just a general hackathon with no specific theme. This event is incredibly fun, and due to its general nature allows you to make or build whatever you want. This is event is the closet to a sort of true form of a hackathon where it's more about you build, learning, and experimenting. We don't offer cash prizes, but instead lesser but fairly good prizes such as computer monitors, good wireless headphones, etc.
+Steelhacks is one of the largest hackathons in Pittsburgh and is an MLH affiliated event. This is put on by PittCSC in collaboration with the School of Computing and Information and the is just a general hackathon with no specific theme. This event is incredibly fun, and due to its general nature allows you to make or build whatever you want. This is event is the closet to a sort of true form of a hackathon where it's more about you build, learning, and experimenting. We don't offer cash prizes, but instead lesser but fairly good prizes such as computer monitors, good wireless headphones, etc.
 
 ### SheInnovates
 
@@ -60,4 +78,17 @@ SheInnovates is our Women's Hackathon (though men can participate). This is also
 
 Pitt Challenge is a hackathon that's themed and focused on healthcare problems and is an MLH affiliated event. With being a themed hackathon their challenges are specified ahead of time and this hackathon is more competitive as their prizes are usually bigger than SteelHacks and SheInnovates typically includes cash prizes. This hackathon is put on by the School of Pharmacy and the Clinical and Translational Science Institute.
 
-> Interested in organizing one of Pitt's amazing hackathons? Contact me at [azharichenko@gmail.com](mailto:azharichenko@gmail.com)!
+## Notable Hackathons outside of Pitt
+
+You can find more on the [MLH website](https://mlh.io/)
+
+| Hackathon      | School                                | Description                                                                              |
+| -------------- | ------------------------------------- | ---------------------------------------------------------------------------------------- |
+| TreeHacks      | Stanford University                   | A highly selective hackathon that covers travel expenses and features top-tier sponsors. |
+| HackMIT        | Massachusetts Institute of Technology | One of the most competitive and well-known hackathons in the world.                      |
+| Hack the North | University of Waterloo                | Canada’s largest hackathon, drawing thousands of talented students each year.            |
+| PennApps       | University of Pennsylvania            | The very first college hackathon and one of my earliest hackathon experiences.           |
+| BitCamp        | University of Maryland                | One of the largest hackathons on the East Coast where PittCSC was able to give a talk.   |
+| TartanHacks    | Carnegie Mellon University            | A major Pittsburgh-area hackathon hosted by ScottyLabs just down the road.               |
+
+> Brayden's updater's Note: When updating this article I kept Alex's use of first-person and even added my own to maintain the personal feel of the article.

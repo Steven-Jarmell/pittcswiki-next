@@ -24,6 +24,6 @@ The opportunity to be a software engineering intern at top company is an incredi
 - Get to meet and hang out with really smart and cool students from all over the world
 - Lots of free swag and gear
 
-<div class="text-orange-600 bg-orange-200 mb-4 p-4">
+<div class="warning-box">
 Note that these guides are written by students. Stay skeptical of things you read on the internet, including this. That being said, we hope you get the job you want through our guides!
 </div>

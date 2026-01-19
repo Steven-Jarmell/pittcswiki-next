@@ -23,7 +23,7 @@ export const CategoriesData: CategoriesDataType[] = [
   },
   {
     name: "Upper Core",
-    courses: ["CS1501", "CS1502", "CS1550"],
+    courses: ["CS1501", "CS1502", "CS1503"],
   },
   {
     name: "Electives",

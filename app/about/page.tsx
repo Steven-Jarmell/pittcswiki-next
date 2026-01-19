@@ -27,13 +27,15 @@ export default function AboutPage() {
           <Link href="/feedback">filling out this form!</Link> If you are
           interested in the technical details of the wiki, everything is open
           source and documented on{" "}
-          <a href="https://github.com/PittCSWiki/pittcswiki" target="_none">
+          <a href="https://github.com/pittcsc/pittcswiki-next" target="_none">
             the GitHub repo!
           </a>
         </p>
 
         <p>Hope its helpful.</p>
-        <i>The 2019 Pitt CSC Officers</i>
+        <i>Created by: The 2019 Pitt CSC Officers</i>
+        <p></p>
+        <i>Updated by: The 2025 Pitt CSC Officers</i>
       </div>
     </>
   )

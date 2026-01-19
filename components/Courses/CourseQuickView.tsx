@@ -6,6 +6,7 @@ export type CourseQuickViewProps = {
   description?: string
   title?: string
   terms_offered?: TermsOfferedType
+  instructors?: string[]
   children: React.ReactNode
 }
 
@@ -14,10 +15,13 @@ const CourseQuickView = ({
   description,
   title,
   terms_offered,
+  instructors,
   children,
 }: CourseQuickViewProps) => {
   return id ? (
-    <CourseQuickViewContent {...{ id, description, title, terms_offered }} />
+    <CourseQuickViewContent
+      {...{ id, description, title, terms_offered, instructors }}
+    />
   ) : (
     <div>{children}</div>
   )

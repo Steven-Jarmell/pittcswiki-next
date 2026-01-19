@@ -10,7 +10,7 @@ import { LinkPanelItemList } from "./LinkPanelItemList"
 
 const LinkPanel = () => {
   return (
-    <div className="my-12 flex flex-col items-center flex-wrap md:flex-row justify-center">
+    <div className="my-12 flex flex-wrap justify-center gap-6 max-w-6xl mx-auto px-4">
       {LinkPanelItemList.map((item) => (
         <LinkPanelItem
           key={item.path}

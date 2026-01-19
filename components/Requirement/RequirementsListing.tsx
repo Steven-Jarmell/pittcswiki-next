@@ -1,7 +1,12 @@
+import { RequirementsData } from "@/types/Requirements"
 import { requirementsTraverser } from "./helper-methods"
 
 type RequirementsListingProps = {
-  requirements: any
+  requirements: {
+    prereq?: RequirementsData
+    coreq?: RequirementsData
+    requirementsString?: string
+  }
 }
 
 const RequirementsListing = ({ requirements }: RequirementsListingProps) => {
@@ -11,7 +16,11 @@ const RequirementsListing = ({ requirements }: RequirementsListingProps) => {
 
   const { prereq, coreq, requirementsString } = requirements
 
-  if (prereq && (prereq.length === 0 || prereq[0] === "TODO")) {
+  if (
+    prereq &&
+    Array.isArray(prereq) &&
+    (prereq.length === 0 || prereq[0] === "TODO")
+  ) {
     return requirementsString ? (
       <div>
         <span className="font-bold">PRE-REQ: </span> Check the SCI Website

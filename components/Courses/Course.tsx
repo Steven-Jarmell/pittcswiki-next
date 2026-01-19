@@ -40,6 +40,9 @@ const Course = ({
   const highlightColor = isPrereqFilterModeOn ? CSLegendData[id] : null
   // this is confusing because it has the html for both mobile format and
   // regular
+  const isCmpInf = id.startsWith("CMPINF")
+  const fontSizeClass = isCmpInf ? " text-xs font-bold" : ""
+
   return (
     <>
       <div
@@ -48,7 +51,8 @@ const Course = ({
         className={
           "hidden md:inline-block course-pill select-none" +
           (isSelected ? " selected" : "") +
-          (showTitle || isPrereqFilterModeOn ? " w-auto " : "")
+          (showTitle || isPrereqFilterModeOn ? " w-auto " : "") +
+          fontSizeClass
         }
         style={
           highlightColor
@@ -73,7 +77,8 @@ const Course = ({
       <Link
         className={
           "md:hidden inline-block course-pill" +
-          (showTitle || isPrereqFilterModeOn ? " w-auto " : "")
+          (showTitle || isPrereqFilterModeOn ? " w-auto " : "") +
+          fontSizeClass
         }
         href={`/courses/${id}`}
       >

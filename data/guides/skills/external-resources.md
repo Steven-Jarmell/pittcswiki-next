@@ -10,6 +10,7 @@ our Slack!
 
 Here is an additional list of people who would love to help out!
 
+- [Shreyash Ranjan](https://www.linkedin.com/in/shreyash-ranjan/) - Pitt CSC Pres '25
 - [Rohit Ganguly](https://www.linkedin.com/in/rohit-ganguly/) - Pitt CSC Pres '18 '19
 - [Mat Varughese](https://www.linkedin.com/in/matvarughese/) - Pitt CSC Vice Pres '18 '19
 - [Ming Wang](https://www.linkedin.com/in/zhengmingwang/) - Pitt CSC Pres '20

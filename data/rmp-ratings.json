@@ -1,0 +1,546 @@
+{
+  "Amy Vaught": {
+    "avgRating": 4.6,
+    "numRatings": 7,
+    "legacyId": 1705405,
+    "firstName": "Amy",
+    "lastName": "Whipple",
+    "id": "VGVhY2hlci0xNzA1NDA1"
+  },
+  "Anna Hermann": {
+    "avgRating": 4.8,
+    "numRatings": 10,
+    "legacyId": 1934926,
+    "firstName": "Anna",
+    "lastName": "Vazeou-Nieuwenhuis",
+    "id": "VGVhY2hlci0xOTM0OTI2"
+  },
+  "Emily Bennett": {
+    "avgRating": 0,
+    "numRatings": 0,
+    "legacyId": 3064955,
+    "firstName": "Emily",
+    "lastName": "Bennett",
+    "id": "VGVhY2hlci0zMDY0OTU1"
+  },
+  "Emily Park": {
+    "avgRating": 5,
+    "numRatings": 4,
+    "legacyId": 2762766,
+    "firstName": "Emily",
+    "lastName": "Hutchinson",
+    "id": "VGVhY2hlci0yNzYyNzY2"
+  },
+  "Jen Gentzel": {
+    "avgRating": 3,
+    "numRatings": 1,
+    "legacyId": 2205583,
+    "firstName": "Jen",
+    "lastName": "Matesa",
+    "id": "VGVhY2hlci0yMjA1NTgz"
+  },
+  "Jennifer Welton": {
+    "avgRating": 4,
+    "numRatings": 229,
+    "legacyId": 131964,
+    "firstName": "Jennifer",
+    "lastName": "Ganger",
+    "id": "VGVhY2hlci0xMzE5NjQ="
+  },
+  "John Faulkner": {
+    "avgRating": 5,
+    "numRatings": 4,
+    "legacyId": 2579209,
+    "firstName": "John",
+    "lastName": "Cantine",
+    "id": "VGVhY2hlci0yNTc5MjA5"
+  },
+  "Kristine Pugliese": {
+    "avgRating": 1.3,
+    "numRatings": 3,
+    "legacyId": 2712098,
+    "firstName": "Kristine",
+    "lastName": "Ruppert",
+    "id": "VGVhY2hlci0yNzEyMDk4"
+  },
+  "Rachel Parkes": {
+    "avgRating": 3.7,
+    "numRatings": 3,
+    "legacyId": 3120349,
+    "firstName": "Rachel ",
+    "lastName": "Campbell",
+    "id": "VGVhY2hlci0zMTIwMzQ5"
+  },
+  "Joseph Graham": {
+    "avgRating": 4.5,
+    "numRatings": 31,
+    "legacyId": 2889716,
+    "firstName": "Joseph",
+    "lastName": "Graham",
+    "id": "VGVhY2hlci0yODg5NzE2"
+  },
+  "William Garrison": {
+    "avgRating": 3.7,
+    "numRatings": 143,
+    "legacyId": 2055608,
+    "firstName": "William",
+    "lastName": "Garrison",
+    "id": "VGVhY2hlci0yMDU1NjA4"
+  },
+  "John Ramirez": {
+    "avgRating": 4.4,
+    "numRatings": 195,
+    "legacyId": 9338,
+    "firstName": "John",
+    "lastName": "Ramirez",
+    "id": "VGVhY2hlci05MzM4"
+  },
+  "Nadine v. F. u. Ludwigsdorff": {
+    "avgRating": 3.5,
+    "numRatings": 35,
+    "legacyId": 2936635,
+    "firstName": "Nadine",
+    "lastName": "von Frankenberg und Ludwigsdor",
+    "id": "VGVhY2hlci0yOTM2NjM1"
+  },
+  "Timothy Hoffman": {
+    "avgRating": 3.9,
+    "numRatings": 140,
+    "legacyId": 1678693,
+    "firstName": "Timothy",
+    "lastName": "Hoffman",
+    "id": "VGVhY2hlci0xNjc4Njkz"
+  },
+  "Christopher MaverickDmitriy Babichenko": {
+    "avgRating": 3.9,
+    "numRatings": 63,
+    "legacyId": 252100,
+    "firstName": "Chris",
+    "lastName": "Bonneau",
+    "id": "VGVhY2hlci0yNTIxMDA="
+  },
+  "Song Shi": {
+    "avgRating": 3.2,
+    "numRatings": 18,
+    "legacyId": 2725027,
+    "firstName": "Song",
+    "lastName": "Shi",
+    "id": "VGVhY2hlci0yNzI1MDI3"
+  },
+  "Matthew Burton": {
+    "avgRating": 3.1,
+    "numRatings": 27,
+    "legacyId": 2326481,
+    "firstName": "Matthew",
+    "lastName": "Lovett",
+    "id": "VGVhY2hlci0yMzI2NDgx"
+  },
+  "Alawya Alawami": {
+    "avgRating": 3.8,
+    "numRatings": 8,
+    "legacyId": 2343108,
+    "firstName": "Alawya",
+    "lastName": "Alawami",
+    "id": "VGVhY2hlci0yMzQzMTA4"
+  },
+  "Michael Yoder": {
+    "avgRating": 5,
+    "numRatings": 1,
+    "legacyId": 2937626,
+    "firstName": "Michael",
+    "lastName": "Yoder",
+    "id": "VGVhY2hlci0yOTM3NjI2"
+  },
+  "Morgan Frank": {
+    "avgRating": 1,
+    "numRatings": 1,
+    "legacyId": 3124885,
+    "firstName": "Morgan",
+    "lastName": "Frank",
+    "id": "VGVhY2hlci0zMTI0ODg1"
+  },
+  "Sean Huff": {
+    "avgRating": 2.3,
+    "numRatings": 187,
+    "legacyId": 2105120,
+    "firstName": "Sean",
+    "lastName": "Garrett-Roe",
+    "id": "VGVhY2hlci0yMTA1MTIw"
+  },
+  "Alexandros Labrinidis": {
+    "avgRating": 3.2,
+    "numRatings": 54,
+    "legacyId": 138892,
+    "firstName": "Alexandros",
+    "lastName": "Labrinidis",
+    "id": "VGVhY2hlci0xMzg4OTI="
+  },
+  "Marcela Gomez": {
+    "avgRating": 2.5,
+    "numRatings": 38,
+    "legacyId": 2564924,
+    "firstName": "Marcela",
+    "lastName": "Perdomo",
+    "id": "VGVhY2hlci0yNTY0OTI0"
+  },
+  "Konstantinos Pelechrinis": {
+    "avgRating": 3.7,
+    "numRatings": 11,
+    "legacyId": 1540986,
+    "firstName": "Konstantinos",
+    "lastName": "Pelechrinis",
+    "id": "VGVhY2hlci0xNTQwOTg2"
+  },
+  "Andrew Xu": {
+    "avgRating": 3.5,
+    "numRatings": 4,
+    "legacyId": 3059342,
+    "firstName": "Andrew",
+    "lastName": "Xu ",
+    "id": "VGVhY2hlci0zMDU5MzQy"
+  },
+  "Michael Devine": {
+    "avgRating": 3.1,
+    "numRatings": 80,
+    "legacyId": 1486882,
+    "firstName": "Mike",
+    "lastName": "Devine",
+    "id": "VGVhY2hlci0xNDg2ODgy"
+  },
+  "Matt de Lima Barbosa": {
+    "avgRating": 4,
+    "numRatings": 8,
+    "legacyId": 2552610,
+    "firstName": "Dolores",
+    "lastName": "Lima",
+    "id": "VGVhY2hlci0yNTUyNjEw"
+  },
+  "Peter DeNardis": {
+    "avgRating": 3.8,
+    "numRatings": 13,
+    "legacyId": 1812783,
+    "firstName": "Peter",
+    "lastName": "Denardis",
+    "id": "VGVhY2hlci0xODEyNzgz"
+  },
+  "Donald Bonidie": {
+    "avgRating": 3.8,
+    "numRatings": 125,
+    "legacyId": 141380,
+    "firstName": "Donald (Don)",
+    "lastName": "Bonidie",
+    "id": "VGVhY2hlci0xNDEzODA="
+  },
+  "Nils Murrugarra LLerena": {
+    "avgRating": 1.8,
+    "numRatings": 34,
+    "legacyId": 3034550,
+    "firstName": "Nils",
+    "lastName": "Murrugarra-Llerena",
+    "id": "VGVhY2hlci0zMDM0NTUw"
+  },
+  "Marina Barsky": {
+    "avgRating": 2.1,
+    "numRatings": 42,
+    "legacyId": 2937628,
+    "firstName": "Marina",
+    "lastName": "Barsky",
+    "id": "VGVhY2hlci0yOTM3NjI4"
+  },
+  "Sherif Khattab": {
+    "avgRating": 3.7,
+    "numRatings": 105,
+    "legacyId": 2313893,
+    "firstName": "Sherif",
+    "lastName": "Khattab",
+    "id": "VGVhY2hlci0yMzEzODkz"
+  },
+  "Stephen Ellis": {
+    "avgRating": 4.6,
+    "numRatings": 34,
+    "legacyId": 2343512,
+    "firstName": "Stephen",
+    "lastName": "Ellis",
+    "id": "VGVhY2hlci0yMzQzNTEy"
+  },
+  "Timothy James": {
+    "avgRating": 4.7,
+    "numRatings": 30,
+    "legacyId": 1791256,
+    "firstName": "Timothy",
+    "lastName": "James",
+    "id": "VGVhY2hlci0xNzkxMjU2"
+  },
+  "Jarrett Billingsley": {
+    "avgRating": 4.5,
+    "numRatings": 128,
+    "legacyId": 2354970,
+    "firstName": "Jarrett",
+    "lastName": "Billingsley",
+    "id": "VGVhY2hlci0yMzU0OTcw"
+  },
+  "Luis F. N. Q. d. Oliveira": {
+    "avgRating": 3.7,
+    "numRatings": 85,
+    "legacyId": 2447491,
+    "firstName": "Luis",
+    "lastName": "Oliveira",
+    "id": "VGVhY2hlci0yNDQ3NDkx"
+  },
+  "Patricia Quirin": {
+    "avgRating": 4.9,
+    "numRatings": 48,
+    "legacyId": 613274,
+    "firstName": "Patricia",
+    "lastName": "Quirin",
+    "id": "VGVhY2hlci02MTMyNzQ="
+  },
+  "Nicholas Farnan": {
+    "avgRating": 3.4,
+    "numRatings": 137,
+    "legacyId": 1894664,
+    "firstName": "Nick",
+    "lastName": "Farnan",
+    "id": "VGVhY2hlci0xODk0NjY0"
+  },
+  "Thumrongsak Kosiyatrakul": {
+    "avgRating": 4.3,
+    "numRatings": 99,
+    "legacyId": 1863081,
+    "firstName": "Thumrongsak",
+    "lastName": "Kosiyatrakul",
+    "id": "VGVhY2hlci0xODYzMDgx"
+  },
+  "Patrick Skeba": {
+    "avgRating": 3,
+    "numRatings": 23,
+    "legacyId": 2937623,
+    "firstName": "Patrick",
+    "lastName": "Skeba",
+    "id": "VGVhY2hlci0yOTM3NjIz"
+  },
+  "Paulo Ferreira": {
+    "avgRating": 3.7,
+    "numRatings": 24,
+    "legacyId": 2717007,
+    "firstName": "Paulo",
+    "lastName": "Ferreira",
+    "id": "VGVhY2hlci0yNzE3MDA3"
+  },
+  "Stephen Lee": {
+    "avgRating": 3,
+    "numRatings": 4,
+    "legacyId": 2707031,
+    "firstName": "Stephen",
+    "lastName": "Lee",
+    "id": "VGVhY2hlci0yNzA3MDMx"
+  },
+  "Wonsun Ahn": {
+    "avgRating": 3.8,
+    "numRatings": 48,
+    "legacyId": 2167851,
+    "firstName": "Wonsun",
+    "lastName": "Ahn",
+    "id": "VGVhY2hlci0yMTY3ODUx"
+  },
+  "Jacob Biehl": {
+    "avgRating": 2.8,
+    "numRatings": 6,
+    "legacyId": 2793746,
+    "firstName": "Jacob",
+    "lastName": "Biehl",
+    "id": "VGVhY2hlci0yNzkzNzQ2"
+  },
+  "Scott Jordan": {
+    "avgRating": 1.3,
+    "numRatings": 3,
+    "legacyId": 3033693,
+    "firstName": "Scott",
+    "lastName": "Jordan",
+    "id": "VGVhY2hlci0zMDMzNjkz"
+  },
+  "Longfei Shangguan": {
+    "avgRating": 3,
+    "numRatings": 1,
+    "legacyId": 2891315,
+    "firstName": "Longfei",
+    "lastName": "Shangguan",
+    "id": "VGVhY2hlci0yODkxMzE1"
+  },
+  "Xiaowei Jia": {
+    "avgRating": 2.6,
+    "numRatings": 10,
+    "legacyId": 2728179,
+    "firstName": "Xiaowei",
+    "lastName": "Jia",
+    "id": "VGVhY2hlci0yNzI4MTc5"
+  },
+  "Dan Mahoney": {
+    "avgRating": 4.9,
+    "numRatings": 7,
+    "legacyId": 2926337,
+    "firstName": "Daniel",
+    "lastName": "Mahoney",
+    "id": "VGVhY2hlci0yOTI2MzM3"
+  },
+  "Lorraine Li": {
+    "avgRating": 5,
+    "numRatings": 1,
+    "legacyId": 2937624,
+    "firstName": "Lorraine",
+    "lastName": "Li",
+    "id": "VGVhY2hlci0yOTM3NjI0"
+  },
+  "John RamirezEmily Bennett": {
+    "avgRating": 5,
+    "numRatings": 4,
+    "legacyId": 2579209,
+    "firstName": "John",
+    "lastName": "Cantine",
+    "id": "VGVhY2hlci0yNTc5MjA5"
+  },
+  "Adam Lee": {
+    "avgRating": 1.7,
+    "numRatings": 11,
+    "legacyId": 2401383,
+    "firstName": "Adam",
+    "lastName": "Lee",
+    "id": "VGVhY2hlci0yNDAxMzgz"
+  },
+  "Adriana Kovashka": {
+    "avgRating": 3.9,
+    "numRatings": 8,
+    "legacyId": 2193583,
+    "firstName": "Adriana",
+    "lastName": "Kovashka",
+    "id": "VGVhY2hlci0yMTkzNTgz"
+  },
+  "Bruce Childers": {
+    "avgRating": 3.8,
+    "numRatings": 43,
+    "legacyId": 90110,
+    "firstName": "Bruce",
+    "lastName": "Childers",
+    "id": "VGVhY2hlci05MDExMA=="
+  },
+  "Daniel Mosse": {
+    "avgRating": 3.8,
+    "numRatings": 26,
+    "legacyId": 89532,
+    "firstName": "Daniel",
+    "lastName": "Mosse",
+    "id": "VGVhY2hlci04OTUzMg=="
+  },
+  "Diane Litman": {
+    "avgRating": 2.2,
+    "numRatings": 22,
+    "legacyId": 138894,
+    "firstName": "Diane",
+    "lastName": "Litman",
+    "id": "VGVhY2hlci0xMzg4OTQ="
+  },
+  "Erin Walker": {
+    "avgRating": 1.8,
+    "numRatings": 19,
+    "legacyId": 2483140,
+    "firstName": "Erin",
+    "lastName": "Walker",
+    "id": "VGVhY2hlci0yNDgzMTQw"
+  },
+  "John Lange": {
+    "avgRating": 4.7,
+    "numRatings": 138,
+    "legacyId": 89106,
+    "firstName": "John",
+    "lastName": "Gareis",
+    "id": "VGVhY2hlci04OTEwNg=="
+  },
+  "Kirk Pruhs": {
+    "avgRating": 3.2,
+    "numRatings": 25,
+    "legacyId": 105280,
+    "firstName": "Kirk",
+    "lastName": "Pruhs",
+    "id": "VGVhY2hlci0xMDUyODA="
+  },
+  "Milos Hauskrecht": {
+    "avgRating": 2.6,
+    "numRatings": 29,
+    "legacyId": 91836,
+    "firstName": "Milos",
+    "lastName": "Hauskrecht",
+    "id": "VGVhY2hlci05MTgzNg=="
+  },
+  "Panos Chrysanthis": {
+    "avgRating": 2.8,
+    "numRatings": 44,
+    "legacyId": 126798,
+    "firstName": "Panos",
+    "lastName": "Chrysanthis",
+    "id": "VGVhY2hlci0xMjY3OTg="
+  },
+  "Youtao Zhang": {
+    "avgRating": 2.1,
+    "numRatings": 21,
+    "legacyId": 943715,
+    "firstName": "Youtao",
+    "lastName": "Zhang",
+    "id": "VGVhY2hlci05NDM3MTU="
+  },
+  "Amy Babay": {
+    "avgRating": 4.6,
+    "numRatings": 7,
+    "legacyId": 2584299,
+    "firstName": "Amy",
+    "lastName": "Babay",
+    "id": "VGVhY2hlci0yNTg0Mjk5"
+  },
+  "Aakash Gautam": {
+    "avgRating": 0,
+    "numRatings": 0,
+    "legacyId": 2937629,
+    "firstName": "Aakash",
+    "lastName": "Gautam",
+    "id": "VGVhY2hlci0yOTM3NjI5"
+  },
+  "Ryan Shi": {
+    "avgRating": 5,
+    "numRatings": 1,
+    "legacyId": 2937631,
+    "firstName": "Ryan",
+    "lastName": "Shi",
+    "id": "VGVhY2hlci0yOTM3NjMx"
+  },
+  "Junyu Liu": {
+    "avgRating": 0,
+    "numRatings": 0,
+    "legacyId": 3096810,
+    "firstName": "Junyu",
+    "lastName": "Liu",
+    "id": "VGVhY2hlci0zMDk2ODEw"
+  },
+  "Paul Cohen": {
+    "avgRating": 2.3,
+    "numRatings": 30,
+    "legacyId": 2351272,
+    "firstName": "Paul",
+    "lastName": "Scott",
+    "id": "VGVhY2hlci0yMzUxMjcy"
+  },
+  "Xulong Tang": {
+    "avgRating": 4,
+    "numRatings": 2,
+    "legacyId": 2686772,
+    "firstName": "Xulong",
+    "lastName": "Tang",
+    "id": "VGVhY2hlci0yNjg2Nzcy"
+  },
+  "Jacob BiehlEmily Bennett": {
+    "avgRating": 4.5,
+    "numRatings": 6,
+    "legacyId": 1971806,
+    "firstName": "Jacob",
+    "lastName": "Mirra",
+    "id": "VGVhY2hlci0xOTcxODA2"
+  }
+}

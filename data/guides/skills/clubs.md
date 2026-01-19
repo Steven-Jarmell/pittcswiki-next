@@ -18,7 +18,7 @@ Being a part of student organizations is an integral part of one's college exper
 
 However, that doesn't mean you shouldn't join other non-CS related organizations! In fact we recommend joining both CS related and non-CS related student organizations. There are a lot of really cool people to meet at Pitt and doing so will allow you to meet a breadth of people.
 
-**Note:** If you run a CS-related organization and would like to add or edit the profile of your org here, please email us at wiki@pittcsc.org!
+**Note:** If you run a CS-related organization and would like to add or edit the profile of your org here, please email us at pittcsc@gmail.com!
 
 ## Pitt Computer Science Club
 

@@ -152,4 +152,5 @@ Usually this is done through email or LinkedIn message. Here's an example email 
 > I had such a great time talking with you. If you have any questions or updates please let me know!
 >
 > Best,
+>
 > [Your Name Here]

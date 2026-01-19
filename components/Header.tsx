@@ -1,3 +1,5 @@
+"use client"
+
 /**
  * Header Component
  *
@@ -10,28 +12,30 @@ import Image from "next/image"
 
 import logo from "@/images/pantherhandbook-mini.svg"
 import Search from "./Search/Search"
+import ThemeToggle from "./ThemeToggle"
 
 const Header = (): JSX.Element => {
   return (
-    <header className="flex flex-none h-16 px-8 mb-4 bg-pittblue pwiki-header">
-      <div className="flex items-center flex-1 justify-between">
-        <div className="flex items-center">
-          <Link
-            className="header-logo flex font-semibold text-white items-center"
-            href="/"
-          >
-            <Image
-              src={logo}
-              alt=""
-              className="w-10 md:mr-0 mr-4 max-w-[50px]"
-            />
-          </Link>
-        </div>
+    <header
+      className="header flex flex-none mb-4 bg-pittblue pwiki-header items-center justify-between sticky top-0 z-50"
+      role="banner"
+    >
+      <div className="flex items-center">
+        <Link
+          className="header-logo flex font-semibold text-white items-center"
+          href="/"
+          aria-label="Pitt CS Wiki Home"
+        >
+          <Image
+            src={logo}
+            alt="Pitt CS Wiki Logo"
+            className="pitt-logo md:mr-0 mr-4"
+          />
+        </Link>
       </div>
-      <div className="w-full md:w-1/3 flex items-center">
-        <div className="relative w-full">
-          <Search />
-        </div>
+      <div className="header-right flex items-center">
+        <Search />
+        <ThemeToggle />
       </div>
     </header>
   )

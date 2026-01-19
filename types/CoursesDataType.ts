@@ -13,4 +13,5 @@ export type CoursesDataType = {
   requirements: string
   replaces?: string
   terms_offered: TermsOfferedType
+  instructors?: string[]
 }

@@ -11,7 +11,7 @@ const FreshnessDisclaimer = ({ lastUpdated }: FreshnessDisclaimerType) => {
   if (isNaN(diff) || diff < FRESHNESS_THRESHOLD_IN_DAYS) return null
 
   return (
-    <p className="bg-orange-200 text-orange-800 p-4">
+    <p className="bg-orange-200 dark:bg-orange-900 text-orange-800 dark:text-orange-200 p-4 rounded-md mb-4">
       Head{"'"}s up, this has not been updated in a while!
     </p>
   )

@@ -1,5 +1,5 @@
 ---
-title: "[02O] 6. Potpourri"
+title: "[Z2O] 6. Potpourri"
 ---
 
 Here is a collection more of random advice!

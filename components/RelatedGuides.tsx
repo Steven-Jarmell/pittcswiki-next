@@ -11,7 +11,7 @@ const RelatedGuides = ({ related }: RelatedGuidesProps) => {
   if (!links || links.length === 0) return null
 
   return (
-    <div className="text-sm border-t border-b py-4">
+    <div className="text-sm border-t border-b border-gray-200 dark:border-gray-700 py-4">
       <h4 className="mb-1">Related Resources</h4>
       <ul className="mb-0">
         {links.map(({ link, title }, i: number) =>

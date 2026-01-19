@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import CourseControls from "./CourseControls"
 import PrereqLegend from "../Requirement/PrereqLegend"
 import Course from "./Course"
@@ -21,37 +21,69 @@ export type CourseListingState = {
   showHidden: boolean
   isPrereqFilterModeOn: boolean
   termOfferedFilter: string
+  searchTerm: string
 }
+
+const COURSE_FILTERS_KEY = "pittcs-course-filters"
 
 const CourseListing = ({
   courseList,
   courseCategories,
 }: CourseListingProps) => {
-  const [state, setState] = useState({
+  const [state, setState] = useState<CourseListingState>(() => ({
     currentCourse: { id: "" },
     showTitles: false,
     showHidden: false,
     isPrereqFilterModeOn: false,
     termOfferedFilter: "OFF",
-  } as CourseListingState)
+    searchTerm: "",
+  }))
 
-  const [showCourseFilters, setShowCourseFilters] = useState(false)
+  const [hasHydratedFilters, setHasHydratedFilters] = useState(false)
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+    try {
+      const stored = window.localStorage.getItem(COURSE_FILTERS_KEY)
+      if (stored) {
+        const parsed = JSON.parse(stored)
+        setState((prev) => ({
+          ...prev,
+          ...parsed,
+          termOfferedFilter: parsed.termOfferedFilter || "OFF",
+        }))
+      }
+    } catch (error) {
+      console.warn("Unable to load course filter preferences", error)
+    } finally {
+      setHasHydratedFilters(true)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!hasHydratedFilters || typeof window === "undefined") return
+    const { currentCourse, ...preferences } = state
+    try {
+      window.localStorage.setItem(
+        COURSE_FILTERS_KEY,
+        JSON.stringify(preferences)
+      )
+    } catch (error) {
+      console.warn("Unable to save course filter preferences", error)
+    }
+  }, [
+    state.searchTerm,
+    state.showTitles,
+    state.showHidden,
+    state.isPrereqFilterModeOn,
+    state.termOfferedFilter,
+    hasHydratedFilters,
+    state,
+  ])
 
   return (
     <div>
-      <div className="my-4 content-center course-controls flex-none hidden md:block">
-        <button
-          className="btn"
-          onClick={() => setShowCourseFilters(!showCourseFilters)}
-        >
-          {(showCourseFilters ? "Hide" : "Show") + " Course Filter Controls"}
-        </button>
-        {showCourseFilters && (
-          <div className="mt-4 border px-2 py-3 md:flex align-center items-center">
-            <CourseControls filters={state} setFilters={setState} />
-          </div>
-        )}
-      </div>
+      <CourseControls filters={state} setFilters={setState} />
       <div
         className={
           state.isPrereqFilterModeOn ? "mb-4 px-2 py-3 border p-1" : "hidden"
@@ -79,7 +111,7 @@ const CourseListing = ({
           isPrereqFilterModeOn={true}
         />
       </div>
-      <div className="flex flex-col-reverse md:flex-row">
+      <div className="flex flex-col-reverse md:flex-row items-start">
         <div className="md:w-2/3 md:pr-1">
           <CourseInteractiveListing
             filters={state}
@@ -91,15 +123,15 @@ const CourseListing = ({
           />
         </div>
         <div
-          className="md:w-1/3 hidden md:flex flex-col sticky top-0"
+          className="md:w-1/3 hidden md:flex flex-col sticky top-0 mt-12"
           style={{
-            height: "70vh",
-            top: "2rem",
+            height: "auto",
+            top: "5rem",
             minWidth: "25rem",
-            maxHeight: "45rem",
+            maxHeight: "35rem",
           }}
         >
-          <div className="flex flex-col h-full p-8 shadow-xl border rounded br-8">
+          <div className="flex flex-col p-8 shadow-xl border rounded br-8 dark:bg-[rgba(255,255,255,0.12)] dark:border-[rgba(255,255,255,0.2)] backdrop-blur-md">
             <CourseQuickView {...state.currentCourse}>
               <div>
                 <h3>Click a course on the left to see details</h3>
@@ -115,13 +147,10 @@ const CourseListing = ({
         </div>
       </div>
       <p className="text-sm italic">
-        This list was last updated on{" "}
-        {new Date(courseList.metadata.generated).toDateString()}. For the most
-        up to date information, look at{" "}
-        <a href="http://courses.sci.pitt.edu/courses">
-          Pitt{"'"}s official website
-        </a>
-        .
+        This page is dynamically pulled from{" "}
+        <a href="https://courses.sci.pitt.edu/courses">courses.sci.pitt.edu</a>{" "}
+        on a weekly frequency. In the case of a mistake or error, look at Pitt
+        {"'"}s official website and/or check PeopleSoft.
       </p>
     </div>
   )

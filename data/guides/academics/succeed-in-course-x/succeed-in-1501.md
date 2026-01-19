@@ -1,6 +1,7 @@
 ---
 title: "How to Succeed in CS1501, Algorithms and Data Structures 2"
 author: "Nathan Barta"
+updated by: "Liam Brem"
 search_tags:
   [
     "1501",
@@ -92,7 +93,7 @@ Topics vary semester to semester and teacher to teacher, but usually include the
 - 🌪 Intractable problems and NP-Completeness
   - P vs NP
   - NP Completeness
-- 🌪 **NEW SPRING 2023** Machine Learning: Overview of the algorithmic foundations of machine learning.
+- 🌪 Machine Learning: Overview of the algorithmic foundations of machine learning.
   - Approaches
     - Supervised learning
     - Unsupervised learning
@@ -103,6 +104,15 @@ Topics vary semester to semester and teacher to teacher, but usually include the
       - Initial assignment
       - Lloyd's algorithm
       - Distance metric
+- 🌪 Point In Polygon: Determine if a point lies within a polygon
+  - Raycasting
+- 🌪 Linear Programming (LP): Problem-solving model for optimal allocation of scarce resources
+  - Objective function (maximize or minimize a linear expression)
+  - Constraints as linear equations or inequalities
+  - Extreme point (vertex) optimality
+  - Simplex algorithm
+  - Reductions from problems like max flow, shortest paths, and matching
+  - Mapping other dynamic programming problems onto linear programing problems
 - Algorithm Performance/Use analysis, often comparing algorithms' against each other.
   - Runtime
   - Memory Usage
@@ -168,7 +178,7 @@ What should I do when I am assigned a project?
 
 You do not want to be holding on to an incomplete project the last 2-3 days before it's due. That's likely when the next project is being introduced - which means you'll have extra things to think about. Also, TA office hours (which you should be going to if you need help) get really busy towards the deadline, so getting help may be a challenge.
 
-> Don't cheat. It's very easy to catch. Beyond the typical meaning of cheating: _don't cheat yourself_. Did you write some code that you don't fully understand? Figure it out. Do it right. Get assistance - your TA's are a great resource.
+> **DON'T USE AI:** It's very easy to catch, but more importantly, you're only cheating yourself. It may be tempting to use AI to help find a bug or write some tests, but you're only limiting your own understanding of the material. The goal of the doing the projects is not to get them done as fast as possible; it's so _you_ can gain a better understanding the content.
 
 ### **Tests**
 

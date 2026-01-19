@@ -1,0 +1,9 @@
+# Ignore artifacts:
+.next
+node_modules
+dist
+build
+coverage
+
+# Ignore temp files
+temp_course_page.html

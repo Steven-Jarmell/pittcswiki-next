@@ -1,8 +1,8 @@
 ---
-title: "[02O] 1. Overview"
+title: "[Z2O] 1. Overview"
 ---
 
-> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/zero-to-offer/)!
+> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/guides/zero-to-offer/)!
 
 Internships at top tech companies are sought after for good reason. You get to meet interesting students from all over the world, receive competitive salaries, experience amazing mentorship, and be pampered with perks from cool companies. So you might be wondering: How do I even get to work at one of these companies?
 
@@ -54,7 +54,7 @@ Getting an interview is contingent on a few things:
 - A strong resume
 - Applying to a bunch of companies
 
-We dive deep into the first two bullets in the [Building your Case](/zero-to-offer/building-your-case) section.
+We dive deep into the first two bullets in the [Building your Case](/guides/zero-to-offer/building-your-case) section.
 
 Applying to companies involves mass online applications and it is common to apply to over 150 companies. For find positions, we post internship postings in [this repository](https://github.com/pittcsc/Summer2024-Internships) and full-time positions in [our new grad database](https://github.com/owini/New-Grad-Positions-2023)! Here are a few things to note about applying.
 
@@ -98,7 +98,7 @@ Once you manage to get an interview, you have to pass it to land the offer. This
 - Behavioral Interviews
 - Having Strong Communication Skills
 
-These steps will be covered extensively in the [Acing Your Interview](/zero-to-offer/ace-your-interview) guide coming up.
+These steps will be covered extensively in the [Acing Your Interview](/guides/zero-to-offer/ace-your-interview) guide coming up.
 
 #### Interview Timeline
 
@@ -126,4 +126,4 @@ All of this interviewing ends up being a decent amount of work! To successfully 
 
 ---
 
-_Next: [Mindset](/zero-to-offer/mindset)_
+_Next: [Mindset](/guides/zero-to-offer/mindset.md)_

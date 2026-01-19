@@ -1,7 +1,7 @@
 ---
 title: What Differentiates Exceptional Software Engineers
 search_tags: ["exceptional"]
-related: ["Succeed at your job", "/career/job-success/"]
+related: ["Succeed at your job", "/guides/career/job-success/"]
 ---
 
 Career advice from [Timothy James](https://www.linkedin.com/in/timothyjames/), an instructor at Pitt and manager at Google.

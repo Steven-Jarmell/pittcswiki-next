@@ -1,8 +1,8 @@
 ---
-title: "[02O] 3. Building your Case"
+title: "[Z2O] 3. Building your Case"
 ---
 
-> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/zero-to-offer/)!
+> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/guides/zero-to-offer/)!
 
 Pretend there is an amazing tech company called “WaterBnb”. Everyone wants to work at WaterBnb. They have brilliant people, amazing food, good values, pay a lot, and have a powerful mission that you agree with. WaterBnb is growing their business and in order to do that, they need great software engineers (like you)! They have decided that creating an internship program and hiring college new grads is the most surefire way to secure emerging tech talent!
 
@@ -120,4 +120,4 @@ In the meantime, make a plan how you are going to improve your skills and what s
 
 ---
 
-_Next: [Acing your Interviews](/zero-to-offer/ace-your-interview)_
+_Next: [Acing your Interviews](/guides/zero-to-offer/ace-your-interview.md)_

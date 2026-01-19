@@ -42,7 +42,7 @@ const CardView = ({ tree }: any) => {
       {tree.href && (
         <a
           href={tree.href}
-          className="w-full h-32 p-4 border text-gray-800 bg-gray-200 shadow-sm transition hover:bg-gray-600 hover:font-bold hover:shadow-md"
+          className="w-full h-32 p-4 border text-gray-800 bg-gray-200 shadow-sm transition-all duration-300 ease-out hover:border-l-4 hover:border-l-[#243e8b] dark:hover:border-l-[#FFB81C] hover:text-[#243e8b] dark:hover:text-[#FFB81C] hover:shadow-md hover:-translate-y-0.5"
         >
           {tree.title}
         </a>
@@ -53,7 +53,7 @@ const CardView = ({ tree }: any) => {
           <a
             key={child.id}
             href={child.href}
-            className="w-full h-32 p-4 border text-gray-800 bg-gray-200 shadow-sm transition hover:text-white hover:bg-gray-600 hover:font-bold hover:shadow-md"
+            className="w-full h-32 p-4 border text-gray-800 bg-gray-200 shadow-sm transition-all duration-300 ease-out hover:border-l-4 hover:border-l-[#243e8b] dark:hover:border-l-[#FFB81C] hover:text-[#243e8b] dark:hover:text-[#FFB81C] hover:shadow-md hover:-translate-y-0.5"
           >
             {child.title}
           </a>
@@ -109,6 +109,21 @@ const SiteMapList = ({ type }: any) => {
           or the sitemap itself, don't include them in the tree
         */
         if (file.name.match(/\[.+\]/) || file.name.includes("sitemap")) {
+          return
+        }
+        /* Skip redirect folders and guides directory when processing app directory,
+           since the actual content is added from data/guides */
+        const redirectFolders = [
+          "guides",
+          "academics",
+          "career",
+          "skills",
+          "zero-to-offer",
+        ]
+        if (
+          baseDirectory.includes("app") &&
+          redirectFolders.includes(file.name)
+        ) {
           return
         }
         if (stats.isDirectory()) {

@@ -1,8 +1,8 @@
 ---
-title: "[02O] 4. Acing Your Interview"
+title: "[Z2O] 4. Acing Your Interview"
 ---
 
-> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/zero-to-offer/)!
+> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/guides/zero-to-offer/)!
 
 Coding Interviews are tough, but with practice you'll be able to pass them with ease. Before continuing, it is **required** to read the following Tech Interview Handbook pages:
 
@@ -121,4 +121,4 @@ When doing these problems try to take no more than 10 minutes thinking of a solu
 
 People tend to do better on interviews that they are not stressed about. This is easier said than done but, don't overly stress about your interviews! If you stress too much you'll end up just psyching yourself out.
 
-_Next: [Post Interview](/zero-to-offer/post-interview)_
+_Next: [Post Interview](/guides/zero-to-offer/post-interview.md)_

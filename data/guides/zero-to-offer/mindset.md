@@ -1,8 +1,8 @@
 ---
-title: "[02O] 2. Mindset"
+title: "[Z2O] 2. Mindset"
 ---
 
-> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/zero-to-offer/)!
+> This is a part of a series of guides called Zero to Offer aimed to help you navigate the internship process. We recommend you start [here](/guides/zero-to-offer/)!
 
 Although the internship process has the potential to lead to great experiences, it can get a bit ugly. Imposter syndrome, comparisons, hyper competition, jealousy, rejection, doubt - these are very normal things that can come about this process.
 
@@ -12,7 +12,7 @@ By keeping a good mindset you can avoid feeding into any toxicity. Below are som
 
 Carol Dweck is a famous psychologist who studied the idea of a “growth mindset.”
 
-<div class="text-sm border p-3 mb-8">
+<div class="info-box">
 In a fixed mindset students believe their basic abilities, their intelligence, their talents, are just fixed traits. They have a certain amount and that's that, and then their goal becomes to look smart all the time and never look dumb. In a growth mindset students understand that their talents and abilities can be developed through effort, good teaching and persistence. They don't necessarily think everyone's the same or anyone can be Einstein, but they believe everyone can get smarter if they work at it. - Carol Dweck
 </div>
 
@@ -70,7 +70,7 @@ Applications are online and _most_ internship applicants are hired through these
 
 _Do not feel insecure that you do not go to a top school._ Your CS curriculum is likely very good, (and if it is not, there are plenty of free educational resources online) and it is unlikely that you are the smartest person at your college so there are people that you can learn from. Even then, you can still learn a lot from others. Make sure you leverage the resources and community around you.
 
-Of course, you will have to work harder if you do not have the elite school on your resume. However, this extra work you put in will serve you well. If you focus on building your skills (as described in the next [article](/zero-to-offer/building-your-case), then you will likely be a _better_ software engineer than someone from a top school that has done nothing. This will give you an edge in the long term. **Learn how to be scrappy and revel in being an underdog. You should wear the chip on your shoulder with pride and let it fuel you in your journey to self-improvement.**
+Of course, you will have to work harder if you do not have the elite school on your resume. However, this extra work you put in will serve you well. If you focus on building your skills (as described in the next [article](/guides/zero-to-offer/building-your-case), then you will likely be a _better_ software engineer than someone from a top school that has done nothing. This will give you an edge in the long term. **Learn how to be scrappy and revel in being an underdog. You should wear the chip on your shoulder with pride and let it fuel you in your journey to self-improvement.**
 
 If you do go to a school with a smaller CS community, think about how this could be advantageous for you. For one, is there a better culture? Elite colleges tend to have “rat race” cultures surrounding internships. If there is a small CS community at your college, take advantage of its tight-knit and collaborative environment.
 
@@ -82,7 +82,7 @@ There is definitely luck involved in the internship process.
 
 However, luck is what happens when preparation meets opportunity. We think of luck like a lightning strike that strikes dramatically. But, luck is more like the wind blowing constantly. Sometimes it is calm and sometimes it is like a gust, sometimes it comes in directions you would not even imagine. So how can you catch the winds of luck?
 
-Work hard. Follow the steps laid out in the [building your case](/zero-to-offer/building-your-case) section and seek out opportunities. Go to events, meet people, and be proactive about your career.
+Work hard. Follow the steps laid out in the [building your case](/guides/zero-to-offer/building-your-case) section and seek out opportunities. Go to events, meet people, and be proactive about your career.
 
 Good luck! 😃
 
@@ -92,7 +92,7 @@ Good luck! 😃
 
 You will get rejected (a lot). It is okay and a part of the game. You can get rejected from a “less selective company” like Chik Fil A and still get an offer from Google in the same internship season.
 
-There is a lot more written about rejection [here](/zero-to-offer/post-interview#rejection). For now, know that every rejection is one step closer to an offer and keep applying!
+There is a lot more written about rejection [here](/guides/zero-to-offer/post-interview#rejection). For now, know that every rejection is one step closer to an offer and keep applying!
 
 ## Jealousy
 
@@ -106,4 +106,4 @@ Subreddits like [r/cscareerquestions](https://www.reddit.com/r/cscareerquestions
 
 ---
 
-_Next: [Building your Case](/zero-to-offer/building-your-case)_
+_Next: [Building your Case](/guides/zero-to-offer/building-your-case.md)_

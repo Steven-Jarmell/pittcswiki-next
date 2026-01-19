@@ -1,6 +1,7 @@
 ---
 title: "How to be a Teaching Assistant"
 author: "Gordon Lu"
+updated by: "Denys Tsinyk"
 search_tags: ["Teaching Assistant", "uta", "part time job", "peer tutor"]
 ---
 
@@ -10,7 +11,7 @@ So you want to be a Teaching Assistant for the CS Department… good choice! But
 
 ## Who should I contact?
 
-Before you can even help any student out, you have to apply for the job! Larissa Ciuca is in charge of coordinating UTAs and Peer Tutor job assignments. Email her at [lbc17@pitt.edu](mailto:lbc17@pitt.edu)!
+Before you can even help any student out, you have to apply for the job! Kailyn Lukaszewski is in charge of coordinating UTAs and Peer Tutor job assignments. Email her at [kcl37@pitt.edu](mailto:KCL37@pitt.edu)!
 
 ## Should I TA?
 
@@ -19,14 +20,31 @@ Have you gotten an A in a CS class? Do you want to get better at explaining tech
 ## What is the difference between a UTA and a Peer Tutor?
 
 Whereas a UTA is more specialized in a particular class, and closer in communication with a specific professor, a Peer Tutor is open to offer help to any student who stumbles into the CRC.
+Whereas a UTA is more specialized in a particular class, and closer in communication with a specific professor, a Peer Tutor offers schedules tutoring sessions that students can then book.
 
 ## What do I need to apply as a UTA?
 
 First, you’ll need to apply on Pittsource. This is the website where you will attach a Resume, and a Cover Letter, in which you will detail your intent in applying to become a UTA! You will also need to send Emily Morris a recommendation from a current CS faculty member. I would recommend getting close to some of your CS professors, it will also benefit you in the long-run if you need to apply for Graduate School and future internships! Oftentimes, professors with tenure are the ones who are also faculty members. (Petrucci, Hoffman, Tan, Garrison, Ramirez, etc...)
+First, you’ll need to apply on the Talent Center. This is the website where you will attach a Resume and answer a few short questions in which you will detail your intent in applying to become a UTA! You will also need to submit a recommendation from a current CS faculty member through this [form](https://forms.office.com/pages/responsepage.aspx?id=ifT5nqDg606HzDpSYRL9DXivOtTS28tOrsCEjvESYOlUNk9CWTZRNU1GOFZLRzc4TTJIUjI1UDFHSS4u).
+I would recommend getting close to some of your CS professors, it will also benefit you in the long-run if you need to apply for Graduate School and future internships!
 
 ## Okay, I got the job. Now what?
 
 Woo hooo! You’re now a UTA for the CS department. But that’s only one part of your exciting job as a UTA! Remember, your job is to provide help to anyone in your recitations who need it! So, it’s of your utmost importance to show that you’re approachable, friendly, and most importantly, helpful!
+
+Once you're hired, you'll need to complete some required trainings before you can start helping students. But dont worry - this part is easy.
+
+## What's the pay and time commitment?
+
+UTAs make $12/hour and can work 10 hours per week per position. You can hold a max of 2 TA positions at a time (max 20 hours per week), but most people just start with 1.
+
+## What's the difference between Recitations and Office Hours?
+
+As a UTA, you'll be responsible for both recitations and office hours!
+
+Recitations are your weekly class sessions where you meet with your assigned students. Think of these as mini-lectures where you can reinforce concepts, work through examples, and help with assignments. The structure of recitations depends on the class and professor. Most include some time for slides to cover what students learned in class that week, followed by time for answering questions and working through labs and projects.
+
+Office Hours are your drop-in help sessions held weekly for a minimum of 3 hours per class. These are usually held in Sennott Square (typically on the 5th or 6th floor). Students don't need to sign up or schedule - they just stop by when they need help! This is where you can give more individualized attention, debug code with students, or help them work through concepts they're struggling with.
 
 ## What if the Professor I’m a TA for is Confusing?
 
@@ -43,3 +61,6 @@ I always believe that the amount you need to prepare is conditional on the diffi
 ## How reachable should I be?
 
 You should try to be as reachable as possible. You don’t need to dedicate an immense amount of time to being a TA, but you should try to be as active as possible. Students understand that as a TA, you have to balance schoolwork on top of your duties as a TA. If a student sends you an email with a question, try to answer it within a couple hours. Additionally, try to set up a Discord Server or some method of communication where students can communicate with each other, and you can monitor their whereabouts. Oftentimes, when a student has a question about a concept or code, by answering it in a shared Discord Channel, it may help answer another student’s question.
+You should try to be as reachable as possible. You don't need to dedicate an immense amount of time to being a TA, but you should try to be as active as possible. Students understand that as a TA, you have to balance schoolwork on top of your duties as a TA. If a student sends you an email with a question, try to answer it within a couple hours.
+
+Most communication happens through Canvas and email - stay active on both! Some classes also use Discord servers or other platforms as an additional way for students to communicate with each other and ask questions. If your class uses one of these, try to monitor it when you can. Oftentimes, when a student has a question about a concept or code, by answering it publicly, it may help answer another student's question too.

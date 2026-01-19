@@ -1,7 +1,7 @@
 ---
 title: "How to Succeed at your Job"
 search_tags: ["first job"]
-related: ["Great Software Engineers", "/career/great-swe/"]
+related: ["Great Software Engineers", "/guides/career/great-swe/"]
 ---
 
 Congrats on getting a job!!! Here are some tips to set you up for success.
@@ -9,7 +9,7 @@ Congrats on getting a job!!! Here are some tips to set you up for success.
 1. **(Highly Recommended!)** Make a "brag doc". Read more [here](https://jvns.ca/blog/brag-documents/).
 2. Ask good questions. Read about the XY problem [here](http://xyproblem.info/).
 3. Make sure you communicate a lot, especially in the beginning!
-4. Read [what makes a great software engineer "great"](/career/great-swe)
+4. Read [what makes a great software engineer "great"](/guides/career/great-swe)
 
 ## Other Notes
 

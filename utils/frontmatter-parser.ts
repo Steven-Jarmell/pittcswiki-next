@@ -7,6 +7,7 @@ export type MDFrontMatterType = {
   search_tags: string
   related: string[]
   author: string
+  order?: number
 }
 
 export const getMDFrontMatter = (md: string) => {
@@ -19,5 +20,6 @@ export const getMDFrontMatter = (md: string) => {
     search_tags: "",
     related: [""],
     author: "",
+    order: data.order,
   } as MDFrontMatterType
 }

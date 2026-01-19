@@ -1,5 +1,5 @@
 ---
-title: "[02O] 5. Post Interview"
+title: "[Z2O] 5. Post Interview"
 ---
 
 The time after an interview can be tough. The anxiety of whether you get the offer or not can distract you for days on end. Unfortunately, The only way to speed up offer decisions is by notifying the company of any other expiring offers that you may have.
@@ -59,7 +59,7 @@ A good alternative to this instead is to ask your recruiter to extend the deadli
 
 Here's an example email you could send to your recruiter:
 
-<div class="text-sm border p-3 mb-8">
+<div class="info-box">
 Hi XXX,
 
 I hope you have been doing well. I am excited about the offer for the internship with XXX. If I remember correctly, the deadline to make a decision is October 2nd. Is it possible to extend the deadline to November 1st?
@@ -81,4 +81,4 @@ Ultimately the decision is up to you, but we highly recommend taking caution whe
 
 ---
 
-_Next: [Potpourri](/zero-to-offer/potpourri)_
+_Next: [Potpourri](/guides/zero-to-offer/potpourri.md)_
