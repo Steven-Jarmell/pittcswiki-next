@@ -191,6 +191,10 @@ If you don't want to go through the hassle of formatting your resume on Word or 
 - [FlowCV](https://flowcv.io/)
 - [Overleaf](https://www.overleaf.com/latex/templates) (For LaTeX templates)
 
+### Preliminary Resume Review
+
+- [CVExpert ATS Health Check](https://cvexpert.com/tools/ats-health-check) checks pasted resume text for common readability and structure issues. It runs in the browser without a file upload or sign-up and does not simulate an employer's ATS or guarantee a result.
+
 ## Cover Letters
 
 Cover Letters are definitely not required when applying. In most cases, it is better to have no cover letter than to have a bad cover letter, especially if your cover letter is "templated" content. An effective cover letter needs to highlight the fit between the job requirements and your skills/experiences. Do not just say what you have done in your cover letter; Tell the recruiter how it is a fit for what he or she is looking for.
